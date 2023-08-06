@@ -1,4 +1,4 @@
-package org.leevilaune.questland.api.models.requests.player;
+package org.leevilaune.questland.api.models.player;
 
 public class PlayerID {
 }

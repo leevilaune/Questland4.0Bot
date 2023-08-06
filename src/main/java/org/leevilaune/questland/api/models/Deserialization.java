@@ -1,4 +1,4 @@
-package org.leevilaune.questland.api.models.requests;
+package org.leevilaune.questland.api.models;
 
 public class Deserialization {
 

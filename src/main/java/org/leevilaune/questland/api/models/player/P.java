@@ -1,4 +1,4 @@
-package org.leevilaune.questland.api.models.requests.player;
+package org.leevilaune.questland.api.models.player;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;

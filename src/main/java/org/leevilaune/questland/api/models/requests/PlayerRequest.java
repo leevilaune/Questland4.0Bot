@@ -1,2 +1,94 @@
-package org.leevilaune.questland.api.models.requests;public class PlayerRequest {
+package org.leevilaune.questland.api.models.requests;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+public class PlayerRequest {
+    @JsonProperty("red_id")
+    private float reqId;
+    private String platform;
+    @JsonProperty("player_id")
+    private float playerId;
+    private String version;
+    private String token;
+    private String lang;
+    private String task;
+
+    public PlayerRequest(float reqId, String platform, float playerId, String version, String token, String lang, String task) {
+        this.reqId = reqId;
+        this.platform = platform;
+        this.playerId = playerId;
+        this.version = version;
+        this.token = token;
+        this.lang = lang;
+        this.task = task;
+    }
+
+    public float getReqId() {
+        return reqId;
+    }
+
+    public void setReqId(float reqId) {
+        this.reqId = reqId;
+    }
+
+    public String getPlatform() {
+        return platform;
+    }
+
+    public void setPlatform(String platform) {
+        this.platform = platform;
+    }
+
+    public float getPlayerId() {
+        return playerId;
+    }
+
+    public void setPlayerId(float playerId) {
+        this.playerId = playerId;
+    }
+
+    public String getVersion() {
+        return version;
+    }
+
+    public void setVersion(String version) {
+        this.version = version;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
+
+    public String getLang() {
+        return lang;
+    }
+
+    public void setLang(String lang) {
+        this.lang = lang;
+    }
+
+    public String getTask() {
+        return task;
+    }
+
+    public void setTask(String task) {
+        this.task = task;
+    }
+
+    @Override
+    public String toString() {
+        return "PlayerRequest{" +
+                "reqId=" + reqId +
+                ", platform='" + platform + '\'' +
+                ", playerId=" + playerId +
+                ", version='" + version + '\'' +
+                ", token='" + token + '\'' +
+                ", lang='" + lang + '\'' +
+                ", task='" + task + '\'' +
+                '}';
+    }
 }

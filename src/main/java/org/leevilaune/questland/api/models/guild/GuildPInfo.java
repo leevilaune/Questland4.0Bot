@@ -1,6 +1,4 @@
-package org.leevilaune.questland.api.models.requests.guild;
-
-import com.fasterxml.jackson.annotation.JsonProperty;
+package org.leevilaune.questland.api.models.guild;
 
 import java.util.List;
 

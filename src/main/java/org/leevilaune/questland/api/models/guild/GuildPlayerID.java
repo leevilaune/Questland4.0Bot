@@ -1,4 +1,4 @@
-package org.leevilaune.questland.api.models.requests.guild;
+package org.leevilaune.questland.api.models.guild;
 
 public class GuildPlayerID {
 

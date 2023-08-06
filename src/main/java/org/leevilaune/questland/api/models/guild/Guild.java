@@ -1,4 +1,4 @@
-package org.leevilaune.questland.api.models.requests.guild;
+package org.leevilaune.questland.api.models.guild;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -10,7 +10,7 @@ public class Guild {
 
     private GuildPInfo pInfo;
 
-    private Object guildsList;
+    private GuildsList guildsList;
 
     private Object guildAcademyTimers;
 
@@ -37,11 +37,11 @@ public class Guild {
     public void setpInfo(GuildPInfo pInfo) {
         this.pInfo = pInfo;
     }
-    public Object getGuildsList() {
+    public GuildsList getGuildsList() {
         return guildsList;
     }
     @JsonProperty("guilds_list")
-    public void setGuildsList(Object guildsList) {
+    public void setGuildsList(GuildsList guildsList) {
         this.guildsList = guildsList;
     }
 
