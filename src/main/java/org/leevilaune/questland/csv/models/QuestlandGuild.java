@@ -15,9 +15,11 @@ public class QuestlandGuild {
         playerList.add(p);
     }
     public void printPlayers(){
-        System.out.println("vip,name,guildName,guildRank,cc,fame,attack,health,defence,magic,multi,score");
+        int index = 0;
+        System.out.println("#,id,name,guildName,guildRank,cc,fame,attack,health,defence,magic,power,multi,score,bloodlust,chillingCold,blueMoonRising");
         for (QuestlandPlayer player : playerList){
-            System.out.println(player.getId()+","+
+            System.out.println(index + "," +
+                    player.getId()+","+
                     player.getName()+","+
                     player.getGuildName()+","+
                     player.getGuildRank()+","+
@@ -27,8 +29,13 @@ public class QuestlandGuild {
                     player.getHealth()+","+
                     player.getDefence()+","+
                     player.getMagic()+","+
+                    player.getPower()+","+
                     player.getMulti()+","+
-                    player.getScore());
+                    player.getScore()+","+
+                    player.getBloodlust()+","+
+                    player.getChillingCold()+","+
+                    player.getBmr());
+            index++;
         }
     }
     public List<QuestlandPlayer> getPlayerList() {

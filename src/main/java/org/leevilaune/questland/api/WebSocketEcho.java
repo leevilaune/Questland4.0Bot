@@ -23,24 +23,35 @@ import org.leevilaune.questland.api.models.requests.PlayerRequest;
 public final class WebSocketEcho extends WebSocketListener {
 
     private PlayerRequest request;
-    private List<Player> completed;
+    private List<String> completed;
+    private List<PlayerRequest> requests;
+    private String guildResponse;
 
     private int playerID;
 
     public WebSocketEcho() {
         this.completed = new ArrayList<>();
+        this.requests = new ArrayList<>();
     }
 
     public void setRequest(PlayerRequest request) {
         this.request = request;
     }
 
-    public List<Player> getCompleted() {
+    public List<String> getCompleted() {
         return completed;
     }
 
     public void setPlayerID(int playerID) {
         this.playerID = playerID;
+    }
+
+    public List<PlayerRequest> getRequests() {
+        return requests;
+    }
+
+    public void setRequests(List<PlayerRequest> requests) {
+        this.requests = requests;
     }
 
     public void run() {
@@ -63,8 +74,8 @@ public final class WebSocketEcho extends WebSocketListener {
         String guild = "{\n" +
                 "   \"req_id\":0,\n" +
                 "   \"platform\":\"android\",\n" +
-                "   \"guild_id\":200155,\n" +
-                "   \"version\":\"4.11.2.3896\",\n" +
+                "   \"guild_id\":202597,\n" +
+                "   \"version\":\"4.11.4.3907\",\n" +
                 "   \"token\":\"9d5ccbae75c5d35c6a56f78d3855df9a\",\n" +
                 "   \"lang\":\"en\",\n" +
                 "   \"task\":\"logged/guild/getguild\"\n" +
@@ -78,30 +89,23 @@ public final class WebSocketEcho extends WebSocketListener {
         //webSocket.send("{\"req_id\":15,\"platform\":\"android\",\"version\":\"4.11.3.3899\",\"token\":\"9d5ccbae75c5d35c6a56f78d3855df9a\",\"lang\":\"en\",\"task\":\"logged/player/idleclaim\"}");
         //be ranking
         //webSocket.send("{\"req_id\":0,\"platform\":\"android\",\"type\":\"battle_event\",\"ge_kind\":\"\",\"version\":\"4.11.3.3899\",\"token\":\"9d5ccbae75c5d35c6a56f78d3855df9a\",\"lang\":\"en\",\"task\":\"logged/ranking/get\"}");
-       try {
-            profile = new ObjectMapper().writeValueAsString(request);
+        //webSocket.send(guild);
+        try {
+            webSocket.send(new ObjectMapper().writeValueAsString(request));
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-        webSocket.send(profile);
-
     }
 
     @Override public void onMessage(WebSocket webSocket, String text) {
         ObjectMapper mapper = new ObjectMapper();
         mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
-        if(text.contains("messages")){
+        if(!text.contains("pinfo") || text.contains("messages")){
             return;
         }
         System.out.println("MESSAGE: " + text);
-        try {
-            Deserialization deserialization = new Deserialization();
-            Player p = mapper.readerFor(Player.class).readValue(deserialization.reformat(playerID,"player_info",text));
-            completed.add(p);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        completed.add(text);
     }
 
     @Override public void onMessage(WebSocket webSocket, ByteString bytes) {

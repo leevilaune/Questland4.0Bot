@@ -4,16 +4,16 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class PlayerRequest {
     @JsonProperty("red_id")
-    private float reqId;
+    private int reqId;
     private String platform;
     @JsonProperty("player_id")
-    private float playerId;
+    private int playerId;
     private String version;
     private String token;
     private String lang;
     private String task;
 
-    public PlayerRequest(float reqId, String platform, float playerId, String version, String token, String lang, String task) {
+    public PlayerRequest(int reqId, String platform, int playerId, String version, String token, String lang, String task) {
         this.reqId = reqId;
         this.platform = platform;
         this.playerId = playerId;
@@ -23,11 +23,11 @@ public class PlayerRequest {
         this.task = task;
     }
 
-    public float getReqId() {
+    public int getReqId() {
         return reqId;
     }
 
-    public void setReqId(float reqId) {
+    public void setReqId(int reqId) {
         this.reqId = reqId;
     }
 
@@ -39,11 +39,11 @@ public class PlayerRequest {
         this.platform = platform;
     }
 
-    public float getPlayerId() {
+    public int getPlayerId() {
         return playerId;
     }
 
-    public void setPlayerId(float playerId) {
+    public void setPlayerId(int playerId) {
         this.playerId = playerId;
     }
 

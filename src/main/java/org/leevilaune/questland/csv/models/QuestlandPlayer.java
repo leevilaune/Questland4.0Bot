@@ -12,10 +12,14 @@ public class QuestlandPlayer {
     private int health;
     private int defence;
     private int magic;
+    private int power;
     private int multi;
     private int score;
+    private int bloodlust;
+    private int chillingCold;
+    private int bmr;
 
-    public QuestlandPlayer(int id, String name, String guildRank,String cc, String guildName, int fame, int attack, int health, int defence, int magic, int multi, int score) {
+    public QuestlandPlayer(int id, String name, String guildRank,String cc, String guildName, int fame, int attack, int health, int defence, int magic, int power,int multi, int score, int bloodlust, int chillingCold, int bmr) {
         this.id = id;
         this.name = name;
         this.guildRank = guildRank;
@@ -26,8 +30,12 @@ public class QuestlandPlayer {
         this.health = health;
         this.defence = defence;
         this.magic = magic;
+        this.power = power;
         this.multi = multi;
         this.score = score;
+        this.bloodlust = bloodlust;
+        this.chillingCold = chillingCold;
+        this.bmr = bmr;
     }
 
     public int getId() {
@@ -110,6 +118,14 @@ public class QuestlandPlayer {
         this.magic = magic;
     }
 
+    public int getPower() {
+        return power;
+    }
+
+    public void setPower(int power) {
+        this.power = power;
+    }
+
     public int getMulti() {
         return multi;
     }
@@ -124,6 +140,30 @@ public class QuestlandPlayer {
 
     public void setScore(int score) {
         this.score = score;
+    }
+
+    public int getBloodlust() {
+        return bloodlust;
+    }
+
+    public void setBloodlust(int bloodlust) {
+        this.bloodlust = bloodlust;
+    }
+
+    public int getChillingCold() {
+        return chillingCold;
+    }
+
+    public void setChillingCold(int chillingCold) {
+        this.chillingCold = chillingCold;
+    }
+
+    public int getBmr() {
+        return bmr;
+    }
+
+    public void setBmr(int bmr) {
+        this.bmr = bmr;
     }
 
     @Override

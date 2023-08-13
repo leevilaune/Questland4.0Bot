@@ -8,6 +8,7 @@ public class P {
     @JsonProperty("g_rank")
     private String guildRank;
     private String cc;
+    private int id;
     @JsonProperty("g_don_ts")
     private int gDonTs;
     private int vip;
@@ -41,6 +42,14 @@ public class P {
 
     public void setCc(String cc) {
         this.cc = cc;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getgDonTs() {

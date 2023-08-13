@@ -10,6 +10,7 @@ public class PlayerInfo {
 
     @JsonProperty("battle_event")
     private BattleEvent battleEvent;
+    private Talents talents;
 
     public int getPowRank() {
         return powRank;
@@ -33,6 +34,14 @@ public class PlayerInfo {
 
     public void setBattleEvent(BattleEvent battleEvent) {
         this.battleEvent = battleEvent;
+    }
+
+    public Talents getTalents() {
+        return talents;
+    }
+
+    public void setTalents(Talents talents) {
+        this.talents = talents;
     }
 
     @Override
