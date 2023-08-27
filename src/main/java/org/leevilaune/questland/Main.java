@@ -24,10 +24,12 @@ import java.util.List;
 
 public class Main {
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws Exception {
         GuildClient guildClient = new GuildClient();
         GuildSearchClient guildSearchClient = new GuildSearchClient(guildClient);
         PlayerClient playerClient = new PlayerClient(guildSearchClient);
+
+        System.out.println(guildSearchClient.getGuild("impero del lupo"));
 
         QuestlandClient questlandClient = new QuestlandClient(playerClient,guildClient,guildSearchClient);
         Bot bot = new Bot(questlandClient);
