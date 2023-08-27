@@ -37,7 +37,9 @@ public class Bot {
         this.questlandClient = questlandClient;
     }
     public void run() throws Exception{
-        DiscordClient client = DiscordClient.create(Files.readString(Path.of("src/main/resources/discordToken.txt")));
+        String token = Files.readString(Path.of("src/main/resources/discordToken.txt"));
+        System.out.println(token);
+        DiscordClient client = DiscordClient.create(token);
         GatewayDiscordClient gateway = client.login().block();
 
         // Get our application's ID
