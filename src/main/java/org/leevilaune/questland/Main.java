@@ -29,8 +29,6 @@ public class Main {
         GuildSearchClient guildSearchClient = new GuildSearchClient(guildClient);
         PlayerClient playerClient = new PlayerClient(guildSearchClient);
 
-        System.out.println(guildSearchClient.getGuild("impero del lupo"));
-
         QuestlandClient questlandClient = new QuestlandClient(playerClient,guildClient,guildSearchClient);
         Bot bot = new Bot(questlandClient);
         try{
