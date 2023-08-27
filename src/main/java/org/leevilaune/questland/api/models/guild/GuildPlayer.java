@@ -168,7 +168,7 @@ public class GuildPlayer {
 
     @Override
     public String toString() {
-        return "GuildPlayer{" +
+        return "\nGuildPlayer{" +
                 "fce=" + fce +
                 ", bre=" + bre +
                 ", g_banner=" + g_banner +

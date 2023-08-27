@@ -58,9 +58,9 @@ public class Guild {
     public String toString() {
         return "Guild{" +
                 "staticdataTs=" + staticdataTs +
-                ", ts=" + ts +
-                ", pInfo=" + pInfo +
-                ", guildsList=" + guildsList +
-                '}';
+                ",\n ts=" + ts +
+                ",\n pInfo=" + pInfo +
+                ",\n guildsList=" + guildsList +
+                "\n}";
     }
 }

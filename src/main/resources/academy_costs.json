@@ -1,0 +1,92 @@
+[
+  {
+    "level": 1,
+    "resources": 500000,
+    "writs": 50
+  },
+  {
+    "level": 2,
+    "resources": 2000000,
+    "writs": 200
+  },
+  {
+    "level": 3,
+    "resources": 5000000,
+    "writs": 500
+  },
+  {
+    "level": 4,
+    "resources": 10000000,
+    "writs": 1000
+  },
+  {
+    "level": 5,
+    "resources": 18000000,
+    "writs": 1800
+  },
+  {
+    "level": 6,
+    "resources": 48000000,
+    "writs": 3200
+  },
+  {
+    "level": 7,
+    "resources": 58500000,
+    "writs": 3900
+  },
+  {
+    "level": 8,
+    "resources": 64500000,
+    "writs": 4300
+  },
+  {
+    "level": 9,
+    "resources": 67500000,
+    "writs": 4500
+  },
+  {
+    "level": 10,
+    "resources": 72750000,
+    "writs": 4850
+  },
+  {
+    "level": 11,
+    "resources": 104000000,
+    "writs": 5200
+  },
+  {
+    "level": 12,
+    "resources": 120000000,
+    "writs": 6000
+  },
+  {
+    "level": 13,
+    "resources": 288000000,
+    "writs": 14400
+  },
+  {
+    "level": 14,
+    "resources": 352000000,
+    "writs": 17600
+  },
+  {
+    "level": 15,
+    "resources": 400000000,
+    "writs": 20000
+  },
+  {
+    "level": 16,
+    "resources": 546000000,
+    "writs": 27300
+  },
+  {
+    "level": 17,
+    "resources": 702000000,
+    "writs": 35100
+  },
+  {
+    "level": 18,
+    "resources": 780000000,
+    "writs": 39000
+  }
+]

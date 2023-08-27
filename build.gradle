@@ -1,10 +1,24 @@
 plugins {
     id("java")
+    id("application")
+    id "com.microsoft.azure.azurewebapp" version "1.1.0"
 }
-
-group = "org.leevilaune.discord"
-version = "1.0-SNAPSHOT"
-
+azurewebapp {
+    subscription = 'deb354cf-17db-4e3b-8af7-8cf208680c74'
+    resourceGroup = 'questlandlookup_group'
+    appName = 'questlandlookup'
+    pricingTier = 'P1v2'
+    region = 'North Europe'
+    runtime {
+        os = 'Linux'
+        webContainer = 'Tomcat 9.0'
+        javaVersion = 'Java 11'
+    }
+}
+application{
+    mainClass = 'org.leevilaune.questland.Main'
+    version = "1.0a"
+}
 repositories {
     mavenCentral()
 }
@@ -12,10 +26,11 @@ repositories {
 dependencies {
     testImplementation(platform("org.junit:junit-bom:5.9.1"))
     testImplementation("org.junit.jupiter:junit-jupiter")
-    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
-    implementation 'com.fasterxml.jackson.core:jackson-core:2.14.2'
-    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.15.1'
-    implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.1'
+    implementation 'com.squareup.okhttp3:okhttp:4.3.1'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.9.4'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.9.4'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.4'
+    implementation 'com.discord4j:discord4j-core:3.2.5'
 }
 
 tasks.test {

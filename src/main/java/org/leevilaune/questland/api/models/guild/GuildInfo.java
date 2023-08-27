@@ -11,8 +11,7 @@ public class GuildInfo {
     private int m;
     private String desc;
     private int priv;
-    @JsonIgnore
-    private Object academy;
+    private Academy academy;
 
     private int p;
     private int exp;
@@ -73,11 +72,11 @@ public class GuildInfo {
         this.priv = priv;
     }
 
-    public Object getAcademy() {
+    public Academy getAcademy() {
         return academy;
     }
 
-    public void setAcademy(Object academy) {
+    public void setAcademy(Academy academy) {
         this.academy = academy;
     }
 
@@ -220,28 +219,28 @@ public class GuildInfo {
     @Override
     public String toString() {
         return "GuildInfo{" +
-                "c='" + c + '\'' +
-                ", m=" + m +
-                ", desc='" + desc + '\'' +
-                ", priv=" + priv +
-                ", academy=" + academy +
-                ", p=" + p +
-                ", exp=" + exp +
-                ", activityTier=" + activityTier +
-                ", qeRankPoints=" + qeRankPoints +
-                ", reqCnt=" + reqCnt +
-                ", ownerActive=" + ownerActive +
-                ", sn='" + sn + '\'' +
-                ", mmc=" + mmc +
-                ", reqVip=" + reqVip +
-                ", reqHeropower=" + reqHeropower +
-                ", banner=" + banner +
-                ", inviteCounter=" + inviteCounter +
-                ", members=" + members +
-                ", collectedBanners=" + collectedBanners +
-                ", n='" + n + '\'' +
-                ", lvl=" + lvl +
-                ", reqLevel=" + reqLevel +
-                '}';
+                "\nc='" + c + '\'' +
+                ",\n m=" + m +
+                ",\n desc='" + desc + '\'' +
+                ",\n priv=" + priv +
+                ",\n academy=" + academy +
+                ",\n p=" + p +
+                ",\n exp=" + exp +
+                ",\n activityTier=" + activityTier +
+                ",\n qeRankPoints=" + qeRankPoints +
+                ",\n reqCnt=" + reqCnt +
+                ",\n ownerActive=" + ownerActive +
+                ",\n sn='" + sn + '\'' +
+                ",\n mmc=" + mmc +
+                ",\n reqVip=" + reqVip +
+                ",\n reqHeropower=" + reqHeropower +
+                ",\n banner=" + banner +
+                ",\n inviteCounter=" + inviteCounter +
+                ",\n members=" + members +
+                ",\n collectedBanners=" + collectedBanners +
+                ",\n n='" + n + '\'' +
+                ",\n lvl=" + lvl +
+                ",\n reqLevel=" + reqLevel +
+                "\n}";
     }
 }

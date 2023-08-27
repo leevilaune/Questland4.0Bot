@@ -4,13 +4,13 @@ import java.util.List;
 
 public class GuildPInfo {
 
-    private List<GuildPlayerID> guildPlayers;
+    private List<GuildPlayer> guildPlayers;
 
-    public List<GuildPlayerID> getGuildPlayers() {
+    public List<GuildPlayer> getGuildPlayers() {
         return guildPlayers;
     }
 
-    public void setGuildPlayers(List<GuildPlayerID> guildPlayers) {
+    public void setGuildPlayers(List<GuildPlayer> guildPlayers) {
         this.guildPlayers = guildPlayers;
     }
 
