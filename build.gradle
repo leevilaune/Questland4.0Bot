@@ -1,19 +1,6 @@
 plugins {
     id("java")
     id("application")
-    id "com.microsoft.azure.azurewebapp" version "1.1.0"
-}
-azurewebapp {
-    subscription = 'deb354cf-17db-4e3b-8af7-8cf208680c74'
-    resourceGroup = 'questlandlookup_group'
-    appName = 'questlandlookup'
-    pricingTier = 'P1v2'
-    region = 'North Europe'
-    runtime {
-        os = 'Linux'
-        webContainer = 'Tomcat 9.0'
-        javaVersion = 'Java 11'
-    }
 }
 application{
     mainClass = 'org.leevilaune.questland.Main'
