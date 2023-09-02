@@ -100,7 +100,6 @@ public class GuildClient extends WebSocketListener {
         if(!text.contains("pinfo") || text.contains("messages")){
             return;
         }
-        System.out.println(text);
         returnedJson = text;
         webSocket.close(1000,null);
     }

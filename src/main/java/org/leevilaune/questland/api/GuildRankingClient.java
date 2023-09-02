@@ -89,7 +89,6 @@ public class GuildRankingClient extends WebSocketListener {
         if(text.contains("messages")){
             return;
         }
-        System.out.println(text);
         returnedJson = text;
         webSocket.close(1000,null);
     }

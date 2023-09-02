@@ -35,7 +35,7 @@ public class GuildSearchClient extends WebSocketListener {
         searchRequest = " {\"req_id\":0,\"platform\":\"android\",\"name\":\""+name+"\",\"country\":\"\",\"level\":0,\"req_level\":0,\"req_heropower\":0,\"req_vip\":0,\"not_full\":0,\"recommended\":0,\"version\":\"4.11.5.3912\",\"token\":\"9d5ccbae75c5d35c6a56f78d3855df9a\",\"lang\":\"en\",\"task\":\"logged/guild/searchguild\"}";
         System.out.println(searchRequest);
         run();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         if(returnedJson == null){
             return new Guild();
         }
@@ -92,7 +92,6 @@ public class GuildSearchClient extends WebSocketListener {
         if(text.contains("messages")){
             return;
         }
-        System.out.println(text);
         returnedJson = text;
         webSocket.close(1000,null);
     }

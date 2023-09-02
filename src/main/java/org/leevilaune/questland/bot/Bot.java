@@ -18,11 +18,13 @@ import discord4j.discordjson.json.ApplicationCommandData;
 import discord4j.discordjson.json.ApplicationCommandOptionData;
 import discord4j.discordjson.json.ApplicationCommandRequest;
 import org.leevilaune.questland.api.QuestlandClient;
+import org.leevilaune.questland.api.models.domain.Item;
 import org.leevilaune.questland.api.models.guild.Academy;
 import org.leevilaune.questland.api.models.guild.AcademyCostItem;
 import org.leevilaune.questland.api.models.guild.AcademyCosts;
 import org.leevilaune.questland.api.models.guild.Guild;
 import org.leevilaune.questland.api.models.player.Player;
+import reactor.core.CoreSubscriber;
 import reactor.core.publisher.Mono;
 
 import java.io.File;
@@ -38,7 +40,6 @@ public class Bot {
     }
     public void run() throws Exception{
         String token = Files.readString(Path.of("src/main/resources/discordToken.txt"));
-        System.out.println(token);
         DiscordClient client = DiscordClient.create(token);
         GatewayDiscordClient gateway = client.login().block();
 
@@ -72,7 +73,22 @@ public class Bot {
                         .required(true)
                         .build())
                 .build();
-
+        ApplicationCommandRequest itemCmdRequest = ApplicationCommandRequest.builder()
+                .name("item")
+                .description("finds ql item")
+                .addOption(ApplicationCommandOptionData.builder()
+                        .name("name")
+                        .required(true)
+                        .description("item name")
+                        .type(ApplicationCommandOption.Type.STRING.getValue())
+                        .build())
+                .build();
+        // Get the commands from discord as a Map
+        Map<String, ApplicationCommandData> discordCommands = gateway.getRestClient()
+                .getApplicationService()
+                .getGlobalApplicationCommands(applicationId)
+                .collectMap(ApplicationCommandData::name)
+                .block();
 // Create the command with Discord
         gateway.getRestClient().getApplicationService()
                 .createGlobalApplicationCommand(applicationId, playerCmdRequest)
@@ -80,44 +96,51 @@ public class Bot {
         gateway.getRestClient().getApplicationService()
                 .createGlobalApplicationCommand(applicationId, guildCmdRequest)
                 .subscribe();
-        // Get the commands from discord as a Map
-        Map<String, ApplicationCommandData> discordCommands = gateway.getRestClient()
-                .getApplicationService()
-                .getGlobalApplicationCommands(applicationId)
-                .collectMap(ApplicationCommandData::name)
-                .block();
+        gateway.getRestClient().getApplicationService()
+                .createGlobalApplicationCommand(applicationId, itemCmdRequest)
+                .subscribe();
 
         gateway.on(ChatInputInteractionEvent.class, event -> {
             if (event.getCommandName().equals("hero")) {
                 try {
-                    event.reply("searching for " + event.getOption("name").get().getValue().get().getRaw() + "...").subscribe();
+                    event.deferReply().subscribe();
                     String reply = playerLookup(event.getOption("name").get().getValue().get().getRaw(),
                             event.getOption("guild").get().getValue().get().getRaw());
-                    event.createFollowup(reply).subscribe();
+                    event.editReply(reply).subscribe();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
             else if(event.getCommandName().equals("guild")){
                 try {
-                    event.reply("searching for " + event.getOption("name").get().getValue().get().getRaw() + "...").subscribe();
+                    event.deferReply().subscribe();
                     String reply = guildLookup(event.getOption("name").get().getValue().get().getRaw());
-                    event.createFollowup(reply).subscribe();
+                    event.editReply(reply).subscribe();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
-            return null;
+            else if(event.getCommandName().equals("item")){
+                try {
+                    event.deferReply().subscribe();
+                    String reply = itemLookup(event.getOption("name").get().getValue().get().getRaw());
+                    event.editReply(reply).subscribe();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+            return new Mono<Object>() {
+                @Override
+                public void subscribe(CoreSubscriber<? super Object> actual) {
+
+                }
+            };
         }).subscribe();
         gateway.onDisconnect().block();
     }
     private String playerLookup(String playerName, String guildName) throws Exception{
 
         Player player = questlandClient.findPlayer(playerName,guildName);
-
-        if(player == null){
-            return "> can't find player " + playerName + " in guild " + guildName+"```";
-        }
         /*EmbedCreateSpec embed = EmbedCreateSpec.builder()
                 .title(player.getPinfo().getPlayerInfo().getP().getName())
                 .description("**ID**\n"+ player.getPinfo().getPlayerInfo().getP().getId()+
@@ -132,8 +155,8 @@ public class Bot {
                         "\n**Battle Event Trophies**\n"+player.getPinfo().getPlayerInfo().getBattleEvent().getScore())
                 .thumbnail("https://cdn.discordapp.com/attachments/1137334110042456106/1145055984742584370/icon_event_menu_be_call_chest_att_bed3881968b74f10e36ae2396f234399.png")
                 .build();*/
-        String response = ">>> ## __**" + player.getPinfo().getPlayerInfo().getP().getName() + "**__" +
-                "\n**ID**\n"+ player.getPinfo().getPlayerInfo().getP().getId()+
+        String response = "## __**" + player.getPinfo().getPlayerInfo().getP().getName() + "**__" +
+                "\n>>> **ID**\n"+ player.getPinfo().getPlayerInfo().getP().getId()+
                 "\n**Guild**\n"+player.getPinfo().getPlayerInfo().getP().getGuildName()+
                 "\n**Hero Power**\n"+player.getPinfo().getPlayerInfo().getP().getPower()+
                 "\n**Hall of Fame**\n"+player.getPinfo().getPlayerInfo().getPowRank()+
@@ -157,49 +180,38 @@ public class Bot {
         AcademyCostItem hpCosts = academyCosts.getLevels().stream().filter(c -> c.getLevel() == hpLvl).findFirst().get();
         int magLvl = academy.getMagic().get(0);
         AcademyCostItem magCosts = academyCosts.getLevels().stream().filter(c -> c.getLevel() == magLvl).findFirst().get();
-        /*EmbedCreateSpec embed = EmbedCreateSpec.builder()
-                .title(guild.getGuildsList().getGuildInfo().getN())
-                .description("**ID**\n"+guild.getpInfo().getGuildPlayers().stream().findFirst().get().getGuildID()+
-                        "\n**Description**\n"+guild.getGuildsList().getGuildInfo().getDesc()+
-                        "\n**Guild Power**\n"+guild.getGuildsList().getGuildInfo().getP()+
-                        "\n**Members**\n"+guild.getGuildsList().getGuildInfo().getM()+"/"+guild.getGuildsList().getGuildInfo().getMmc()+
-                        "\n**Owner**\n"+guild.getpInfo().getGuildPlayers().stream().filter(p -> p.getGuildRank().equalsIgnoreCase("owner")).findFirst().get().getName()+
-                        "\n**Research Levels**\n Attack:  " + dmgLvl+"\n Defence: " + defLvl + "\n Health:  " + hpLvl+"\n Magic:   " + magLvl+
-                        "\n**Rank Points**\n"+guild.getGuildsList().getGuildInfo().getQeRankPoints()
-                        //"\n**Research Progress**\n Health"
-                        )
-                .thumbnail("https://cdn.discordapp.com/attachments/1137334110042456106/1145055984742584370/icon_event_menu_be_call_chest_att_bed3881968b74f10e36ae2396f234399.png")
-                .addField("Research",
-                        "**Attack**\n"+
-                        "Gold:     " + academy.getDamage().get(1)+"/"+dmgCosts.getResources()+
-                        "\nEternium: " + academy.getDamage().get(2)+"/"+dmgCosts.getResources()+
-                        "\nBlue Writ:" + academy.getDamage().get(3)+"/"+dmgCosts.getWrits()+
-                        "\nRed Writ: " + academy.getDamage().get(4)+"/"+dmgCosts.getWrits()+
-                        "\n**Defence**\n"+
-                        "Gold:     " + academy.getDefence().get(1)+"/"+defCosts.getResources()+
-                        "\nEternium: " + academy.getDefence().get(2)+"/"+defCosts.getResources()+
-                        "\nBlue Writ:" + academy.getDefence().get(3)+"/"+defCosts.getWrits()+
-                        "\nRed Writ: " + academy.getDefence().get(4)+"/"+defCosts.getWrits()+
-                        "\n**Health**\n"+
-                        "Gold:     " + academy.getHp().get(1)+"/"+hpCosts.getResources()+
-                        "\nEternium: " + academy.getHp().get(2)+"/"+hpCosts.getResources()+
-                        "\nBlue Writ:" + academy.getHp().get(3)+"/"+hpCosts.getWrits()+
-                        "\nRed Writ: " + academy.getHp().get(4)+"/"+hpCosts.getWrits()+
-                        "\n**Magic**\n"+
-                        "Gold:     " + academy.getMagic().get(1)+"/"+magCosts.getResources()+
-                        "\nEternium: " + academy.getMagic().get(2)+"/"+magCosts.getResources()+
-                        "\nBlue Writ:" + academy.getMagic().get(3)+"/"+magCosts.getWrits()+
-                        "\nRed Writ: " + academy.getMagic().get(4)+"/"+magCosts.getWrits(),
-                        true)
-                .build();*/
-        String response = ">>> ## __**"+guild.getGuildsList().getGuildInfo().getN()+"**__"+
-                "\n**ID**\n"+guild.getpInfo().getGuildPlayers().stream().findFirst().get().getGuildID()+
+        String response = "## __**"+guild.getGuildsList().getGuildInfo().getN()+"**__"+
+                "\n>>> **ID**\n"+guild.getpInfo().getGuildPlayers().stream().findFirst().get().getGuildID()+
                 "\n**Description**\n"+guild.getGuildsList().getGuildInfo().getDesc()+
                 "\n**Guild Power**\n"+guild.getGuildsList().getGuildInfo().getP()+
                 "\n**Members**\n"+guild.getGuildsList().getGuildInfo().getM()+"/"+guild.getGuildsList().getGuildInfo().getMmc()+
                 "\n**Owner**\n"+guild.getpInfo().getGuildPlayers().stream().filter(p -> p.getGuildRank().equalsIgnoreCase("owner")).findFirst().get().getName()+
                 "\n**Research Levels**\n Attack:  " + dmgLvl+"\n Defence: " + defLvl + "\n Health:  " + hpLvl+"\n Magic:   " + magLvl+
                 "\n**Rank Points**\n"+guild.getGuildsList().getGuildInfo().getQeRankPoints();
+        return response;
+    }
+    private String itemLookup(String itemName){
+        Item item = questlandClient.findItem(itemName);
+
+        String header = "### [__**" + item.getName()+"**__]("+item.getFullUrl()+")";
+        if(item.getFullUrl().isEmpty()){
+            header = "### __**" + item.getName()+"**__";
+        }
+
+        String response = header+
+                "\n>>> **Emblem**\n"+item.getEmblem()+
+                "\n**Slot**\n"+item.getSlot()+
+                "\n**Type**\n" + item.getTypeID()+
+                "\n**Potential**\n"+item.getPotential()+
+                "\n** Health**\n "+item.getHealth()+
+                "\n** Attack**\n "+item.getAttack()+
+                "\n** Defence**\n "+item.getDefence()+
+                "\n** Magic**\n "+item.getMagic()+
+                "\n**Links**"+
+                "\n "+item.getLinks().get(0)+
+                "\n "+item.getLinks().get(1)+
+                "\n "+item.getLinks().get(2);
+
         return response;
     }
 }

@@ -37,7 +37,7 @@ public class PlayerClient extends WebSocketListener {
         int id = g.getpInfo().getGuildPlayers().stream().filter(p -> p.getName().equalsIgnoreCase(name)).findFirst().get().getId();
         playerRequest = "{\"req_id\":0,\"platform\":\"android\",\"player_id\":"+id+",\"version\":\"4.11.5.3912\",\"token\":\"9d5ccbae75c5d35c6a56f78d3855df9a\",\"lang\":\"en\",\"task\":\"logged/player/getprofile\"}";
         run();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         if(returnedJson == null){
             System.out.println("returned is null");
             return new Player();
@@ -109,7 +109,6 @@ public class PlayerClient extends WebSocketListener {
         if(text.contains("messages")){
             return;
         }
-        System.out.println(text);
         returnedJson = text;
         webSocket.close(1000,null);
     }
