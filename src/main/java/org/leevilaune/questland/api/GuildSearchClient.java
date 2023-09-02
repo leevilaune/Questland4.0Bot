@@ -44,7 +44,7 @@ public class GuildSearchClient extends WebSocketListener {
         }
         System.out.println(returnedJson);
         JsonNode node = mapper.readerFor(JsonNode.class).readValue(returnedJson);
-        if(!node.get("guilds_search_indices").fields().hasNext()){
+        if(node.get("guilds_search_indices").isEmpty()){
             return null;
         }
         Guild guild = guildClient.getGuild(Integer.parseInt(node.get("guilds_list").fieldNames().next()));
