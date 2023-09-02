@@ -31,6 +31,7 @@ public class PlayerClient extends WebSocketListener {
     public Player getPlayer(String name, String guildName) throws Exception{
 
         Guild g = guildSearchClient.getGuild(guildName);
+        Thread.sleep(2000);
         if(g.getpInfo().getGuildPlayers().stream().filter(p -> p.getName().equalsIgnoreCase(name)).findFirst().get() == null){
             return null;
         }

@@ -28,6 +28,7 @@ import reactor.core.CoreSubscriber;
 import reactor.core.publisher.Mono;
 
 import java.io.File;
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Map;
@@ -109,6 +110,7 @@ public class Bot {
                     event.editReply(reply).subscribe();
                 } catch (Exception e) {
                     e.printStackTrace();
+                    gateway.getRestClient().getChannelById(Snowflake.of("1147561619757482114")).createMessage(e.getMessage());
                 }
             }
             else if(event.getCommandName().equals("guild")){
@@ -118,6 +120,7 @@ public class Bot {
                     event.editReply(reply).subscribe();
                 } catch (Exception e) {
                     e.printStackTrace();
+                    gateway.getRestClient().getChannelById(Snowflake.of("1147561619757482114")).createMessage(e.getMessage());
                 }
             }
             else if(event.getCommandName().equals("item")){
@@ -127,6 +130,7 @@ public class Bot {
                     event.editReply(reply).subscribe();
                 } catch (Exception e) {
                     e.printStackTrace();
+                    gateway.getRestClient().getChannelById(Snowflake.of("1147561619757482114")).createMessage(e.getMessage());
                 }
             }
             return new Mono<Object>() {
@@ -141,20 +145,6 @@ public class Bot {
     private String playerLookup(String playerName, String guildName) throws Exception{
 
         Player player = questlandClient.findPlayer(playerName,guildName);
-        /*EmbedCreateSpec embed = EmbedCreateSpec.builder()
-                .title(player.getPinfo().getPlayerInfo().getP().getName())
-                .description("**ID**\n"+ player.getPinfo().getPlayerInfo().getP().getId()+
-                        "\n**Guild**\n"+player.getPinfo().getPlayerInfo().getP().getGuildName()+
-                        "\n**Hero Power**\n"+player.getPinfo().getPlayerInfo().getP().getPower()+
-                        "\n**Hall of Fame**\n"+player.getPinfo().getPlayerInfo().getPowRank()+
-                        "\n**Health**\n"+player.getPinfo().getPlayerInfo().getP().getAttr().getHealth()+
-                        "\n**Attack**\n"+player.getPinfo().getPlayerInfo().getP().getAttr().getAttack()+
-                        "\n**Defence**\n"+player.getPinfo().getPlayerInfo().getP().getAttr().getDefence()+
-                        "\n**Magic**\n"+player.getPinfo().getPlayerInfo().getP().getAttr().getMagic()+
-                        "\n**Multiplier**\n"+player.getPinfo().getPlayerInfo().getBattleEvent().getMultiplier()+
-                        "\n**Battle Event Trophies**\n"+player.getPinfo().getPlayerInfo().getBattleEvent().getScore())
-                .thumbnail("https://cdn.discordapp.com/attachments/1137334110042456106/1145055984742584370/icon_event_menu_be_call_chest_att_bed3881968b74f10e36ae2396f234399.png")
-                .build();*/
         String response = "## __**" + player.getPinfo().getPlayerInfo().getP().getName() + "**__" +
                 "\n>>> **ID**\n"+ player.getPinfo().getPlayerInfo().getP().getId()+
                 "\n**Guild**\n"+player.getPinfo().getPlayerInfo().getP().getGuildName()+
