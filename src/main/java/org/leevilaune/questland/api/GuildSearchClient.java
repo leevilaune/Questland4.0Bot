@@ -40,7 +40,7 @@ public class GuildSearchClient extends WebSocketListener {
         run();
         Thread.sleep(2000);
         if(returnedJson == null){
-            return new Guild();
+            return null;
         }
         System.out.println(returnedJson);
         JsonNode node = mapper.readerFor(JsonNode.class).readValue(returnedJson);

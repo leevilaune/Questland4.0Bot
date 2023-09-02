@@ -41,7 +41,7 @@ public class GuildClient extends WebSocketListener {
         run();
         Thread.sleep(1000);
         if(returnedJson == null){
-            return new Guild();
+            return null;
         }
         Guild guild = mapper.readerFor(Guild.class).readValue(deserialization.reformat(id,"guild_info", returnedJson));
         guild.getpInfo().setGuildPlayers(deserialization.deserializeGuildPlayers(returnedJson));
