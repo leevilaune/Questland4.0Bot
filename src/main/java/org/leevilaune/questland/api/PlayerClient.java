@@ -31,6 +31,9 @@ public class PlayerClient extends WebSocketListener {
     public Player getPlayer(String name, String guildName) throws Exception{
 
         Guild g = guildSearchClient.getGuild(guildName);
+        if(g == null){
+            return null;
+        }
         Thread.sleep(2000);
         if(g.getpInfo().getGuildPlayers().stream().filter(p -> p.getName().equalsIgnoreCase(name)).findFirst().get() == null){
             return null;
@@ -40,8 +43,7 @@ public class PlayerClient extends WebSocketListener {
         run();
         Thread.sleep(2000);
         if(returnedJson == null){
-            System.out.println("returned is null");
-            return new Player();
+            return null;
         }
         Player player = mapper.readerFor(Player.class).readValue(deserialization.reformat(id,"player_info",returnedJson));
         return player;

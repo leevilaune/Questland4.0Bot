@@ -1,13 +1,11 @@
 package org.leevilaune.questland.api;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 import java.util.Scanner;
 import org.leevilaune.questland.api.models.domain.Item;
 
@@ -61,7 +59,7 @@ public class ItemClient {
                     parts[2] = "DEFENCE";
                     //System.out.println(parts[2]);
                 }
-                Item i = InitItem(parts);
+                Item i = initItem(parts);
                 itemList.add(i);
                 index++;
             }
@@ -78,7 +76,7 @@ public class ItemClient {
                     parts[2] = "DEFENCE";
                     //System.out.println(parts[2]);
                 }
-                Item i = InitItem(parts);
+                Item i = initItem(parts);
                 itemList.add(i);
                 index++;
             }
@@ -92,7 +90,7 @@ public class ItemClient {
         }
 
     }
-    public Item InitItem(String[] parts){
+    public Item initItem(String[] parts){
 
         if(parts.length==16){
             String iconLink = "";

@@ -143,8 +143,12 @@ public class Bot {
         gateway.onDisconnect().block();
     }
     private String playerLookup(String playerName, String guildName) throws Exception{
-
         Player player = questlandClient.findPlayer(playerName,guildName);
+
+        if(player == null){
+            return "> Player " +playerName + " not found in guild " + guildName;
+        }
+
         String response = "## __**" + player.getPinfo().getPlayerInfo().getP().getName() + "**__" +
                 "\n>>> **ID**\n"+ player.getPinfo().getPlayerInfo().getP().getId()+
                 "\n**Guild**\n"+player.getPinfo().getPlayerInfo().getP().getGuildName()+
@@ -160,6 +164,9 @@ public class Bot {
     }
     private String guildLookup(String guildName) throws Exception{
         Guild guild = questlandClient.findGuild(guildName);
+        if(guild == null){
+            return "> Guild " +guildName + " not found";
+        }
         AcademyCosts academyCosts = new AcademyCosts();
         Academy academy = guild.getGuildsList().getGuildInfo().getAcademy();
         int dmgLvl = academy.getDamage().get(0);
@@ -182,7 +189,9 @@ public class Bot {
     }
     private String itemLookup(String itemName){
         Item item = questlandClient.findItem(itemName);
-
+        if(item == null){
+            return "Item " + itemName + " not found";
+        }
         String header = "### [__**" + item.getName()+"**__]("+item.getFullUrl()+")";
         if(item.getFullUrl().isEmpty()){
             header = "### __**" + item.getName()+"**__";

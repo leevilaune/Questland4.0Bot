@@ -9,6 +9,9 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.leevilaune.questland.api.models.Deserialization;
 import org.leevilaune.questland.api.models.guild.Guild;
+import org.leevilaune.questland.api.models.guild.GuildInfo;
+import org.leevilaune.questland.api.models.guild.GuildPInfo;
+import org.leevilaune.questland.api.models.guild.GuildsList;
 
 import java.util.concurrent.TimeUnit;
 
@@ -39,7 +42,11 @@ public class GuildSearchClient extends WebSocketListener {
         if(returnedJson == null){
             return new Guild();
         }
+        System.out.println(returnedJson);
         JsonNode node = mapper.readerFor(JsonNode.class).readValue(returnedJson);
+        if(!node.get("guilds_search_indices").fields().hasNext()){
+            return null;
+        }
         Guild guild = guildClient.getGuild(Integer.parseInt(node.get("guilds_list").fieldNames().next()));
         return guild;
 
