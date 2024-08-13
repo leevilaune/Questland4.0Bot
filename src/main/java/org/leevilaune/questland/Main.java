@@ -36,7 +36,13 @@ public class Main {
         PlayerClient playerClient = new PlayerClient(guildSearchClient,token,version);
         ArenaClient arenaClient = new ArenaClient(token,version);
         BattleEventRankingClient beRanking = new BattleEventRankingClient(playerClient);
-        beRanking.getBattleEventRanking();
+        StaticDataClient staticDataClient = new StaticDataClient(token,version);
+        //staticDataClient.getStaticData();
+        //beRanking.getBattleEventRanking();
+
+        StaticDataManager staticDataManager = new StaticDataManager();
+        staticDataManager.combineEvents();
+        //staticDataManager.combineItems();
 
         //guildSearchClient.getGuild("impero del lupo");
 
@@ -48,7 +54,7 @@ public class Main {
         //guildRankingClient.getGuildRanking();
         //arenaClient.getRanking();
         //System.out.println(guildSearchClient.getGuild("legione fooking").print());
-        System.out.println(playerClient.getPlayer("nullvalue","legione fooking").print());
+        //System.out.println(playerClient.getPlayer("nullvalue","legione fooking").print());
 
         GuildRankingClient grc = new GuildRankingClient();
         //System.out.println(grc.getGuildRanking());
