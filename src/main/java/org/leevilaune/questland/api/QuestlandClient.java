@@ -11,7 +11,7 @@ public class QuestlandClient {
     private GuildSearchClient guildSearchClient;
     private ItemClient itemClient;
 
-    public QuestlandClient(PlayerClient playerClient, GuildClient guildClient, GuildSearchClient guildSearchClient){
+    public QuestlandClient(PlayerClient playerClient, GuildClient guildClient, GuildSearchClient guildSearchClient, String token, String version){
         this.playerClient = playerClient;
         this.guildClient = guildClient;
         this.guildSearchClient = guildSearchClient;
@@ -24,7 +24,7 @@ public class QuestlandClient {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return null;
+        return new Player();
     }
     public Guild findGuild(String name){
         try {

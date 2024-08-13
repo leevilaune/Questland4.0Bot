@@ -13,13 +13,13 @@ public class QuestlandPlayer {
     private int defence;
     private int magic;
     private int power;
-    private int multi;
+    private double multi;
     private int score;
     private int bloodlust;
     private int chillingCold;
     private int bmr;
 
-    public QuestlandPlayer(int id, String name, String guildRank,String cc, String guildName, int fame, int attack, int health, int defence, int magic, int power,int multi, int score, int bloodlust, int chillingCold, int bmr) {
+    public QuestlandPlayer(int id, String name, String guildRank,String cc, String guildName, int fame, int attack, int health, int defence, int magic, int power,double multi, int score, int bloodlust, int chillingCold, int bmr) {
         this.id = id;
         this.name = name;
         this.guildRank = guildRank;
@@ -126,11 +126,11 @@ public class QuestlandPlayer {
         this.power = power;
     }
 
-    public int getMulti() {
+    public double getMulti() {
         return multi;
     }
 
-    public void setMulti(int multi) {
+    public void setMulti(double multi) {
         this.multi = multi;
     }
 

@@ -33,9 +33,10 @@ public class GuildRankingClient extends WebSocketListener {
     }
 
     public GuildRanking getGuildRanking() throws Exception{
-        request = "{\"req_id\":0,\"platform\":\"android\",\"type\":\"global_guild\",\"ge_kind\":\"\",\"version\":\"4.11.5.3912\",\"token\":\"9d5ccbae75c5d35c6a56f78d3855df9a\",\"lang\":\"en\",\"task\":\"logged/ranking/get\"}";
+        request = "{\"req_id\":0,\"platform\":\"android\",\"type\":\"global_guild\",\"ge_kind\":\"\",\"version\":\"4.20.0.4085\",\"token\":\"9d5ccbae75c5d35c6a56f78d3855df9a\",\"lang\":\"en\",\"task\":\"logged/ranking/get\"}";
         run();
         Thread.sleep(1000);
+        System.out.println(returnedJson);
         return deserialization.deserializeGuildRanking(returnedJson);
 
     }

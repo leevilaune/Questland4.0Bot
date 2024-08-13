@@ -31,6 +31,17 @@ public class Player {
         this.pinfo = pinfo;
     }
 
+    public String print(){
+        P player = this.getPinfo().getPlayerInfo().getP();
+        BattleEvent battleEvent = this.getPinfo().getPlayerInfo().getBattleEvent();
+        return this.getPinfo().getPlayerInfo().getP().getName() +
+                "\n   ID:    " + player.getId() +
+                "\n   VIP:   " + player.getVip() +
+                "\n   Power: " + player.getPower() +
+                "\n   Multi: " + battleEvent.getMultiplier() +
+                "\n   Score: " + battleEvent.getScore();
+    }
+
     @Override
     public String toString() {
         return "Player{" +

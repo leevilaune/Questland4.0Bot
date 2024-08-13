@@ -1,6 +1,7 @@
 package org.leevilaune.questland.api;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import okhttp3.*;
 import okio.ByteString;
@@ -8,9 +9,11 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.leevilaune.questland.api.models.Deserialization;
 import org.leevilaune.questland.api.models.guild.Guild;
+import org.leevilaune.questland.api.models.player.BattleEvent;
 import org.leevilaune.questland.api.models.player.P;
 import org.leevilaune.questland.api.models.player.Player;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class PlayerClient extends WebSocketListener {
@@ -20,11 +23,14 @@ public class PlayerClient extends WebSocketListener {
     private ObjectMapper mapper;
     private Deserialization deserialization;
     private GuildSearchClient guildSearchClient;
-    public PlayerClient(GuildSearchClient guildSearchClient) {
+    private String token,version;
+    public PlayerClient(GuildSearchClient guildSearchClient,String token, String version) {
         super();
         this.deserialization = new Deserialization();
         this.mapper = new ObjectMapper();
         this.guildSearchClient = guildSearchClient;
+        this.token = token;
+        this.version = version;
         setMapperConfigurations();
     }
 
@@ -36,23 +42,38 @@ public class PlayerClient extends WebSocketListener {
         }
         Thread.sleep(2000);
         if(g.getpInfo().getGuildPlayers().stream().filter(p -> p.getName().equalsIgnoreCase(name)).findFirst().get() == null){
-            return null;
+            return new Player();
         }
         int id = g.getpInfo().getGuildPlayers().stream().filter(p -> p.getName().equalsIgnoreCase(name)).findFirst().get().getId();
-        playerRequest = "{\"req_id\":0,\"platform\":\"android\",\"player_id\":"+id+",\"version\":\"4.11.5.3912\",\"token\":\"9d5ccbae75c5d35c6a56f78d3855df9a\",\"lang\":\"en\",\"task\":\"logged/player/getprofile\"}";
+        playerRequest = "{\"req_id\":0,\"platform\":\"android\",\"player_id\":"+id+",\"version\":\""+version+"\",\"token\":\""+token+"\",\"lang\":\"en\",\"task\":\"logged/player/getprofile\"}";
         run();
         Thread.sleep(2000);
         if(returnedJson == null){
             return null;
         }
         Player player = mapper.readerFor(Player.class).readValue(deserialization.reformat(id,"player_info",returnedJson));
+        deserialization.deserializeOrbs(returnedJson,id);
+        return player;
+
+    }
+    public Player getPlayer(int id) throws Exception{
+        playerRequest = "{\"req_id\":0,\"platform\":\"android\",\"player_id\":"+id+",\"version\":\""+version+"\",\"token\":\""+token+"\",\"lang\":\"en\",\"task\":\"logged/player/getprofile\"}";
+        run();
+        Thread.sleep(2000);
+        if(returnedJson == null){
+            return null;
+        }
+        System.out.println(returnedJson);
+        Player player = mapper.readerFor(Player.class).readValue(deserialization.reformat(id,"player_info",returnedJson));
+        //BattleEvent battleEvent = deserialization.deserializePlayerBattleEvent(returnedJson,id);
+        //player.getPinfo().getPlayerInfo().setBattleEvent(battleEvent);
         return player;
 
     }
     public Player getPlayer(String name, Guild guild) throws Exception{
 
         int id = guild.getpInfo().getGuildPlayers().stream().filter(p -> p.getName().equalsIgnoreCase(name)).findFirst().get().getId();
-        playerRequest = "{\"req_id\":0,\"platform\":\"android\",\"player_id\":"+id+",\"version\":\"4.11.5.3912\",\"token\":\"9d5ccbae75c5d35c6a56f78d3855df9a\",\"lang\":\"en\",\"task\":\"logged/player/getprofile\"}";
+        playerRequest = "{\"req_id\":0,\"platform\":\"android\",\"player_id\":"+id+",\"version\":\""+version+"\",\"token\":\""+token+"\",\"lang\":\"en\",\"task\":\"logged/player/getprofile\"}";
         run();
         Thread.sleep(2000);
         if(returnedJson == null){
@@ -91,16 +112,19 @@ public class PlayerClient extends WebSocketListener {
     }
     @Override
     public void onClosed(@NotNull WebSocket webSocket, int code, @NotNull String reason) {
+        System.out.println(reason);
         super.onClosed(webSocket, code, reason);
     }
 
     @Override
     public void onClosing(@NotNull WebSocket webSocket, int code, @NotNull String reason) {
+        System.out.println(reason);
         super.onClosing(webSocket, code, reason);
     }
 
     @Override
     public void onFailure(@NotNull WebSocket webSocket, @NotNull Throwable t, @Nullable Response response) {
+        System.out.println(response);
         super.onFailure(webSocket, t, response);
     }
 
@@ -113,6 +137,7 @@ public class PlayerClient extends WebSocketListener {
             return;
         }
         returnedJson = text;
+        System.out.println(text);
         webSocket.close(1000,null);
     }
 

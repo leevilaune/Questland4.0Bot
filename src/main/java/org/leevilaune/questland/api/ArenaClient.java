@@ -1,62 +1,42 @@
 package org.leevilaune.questland.api;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
-import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import okhttp3.*;
 import okio.ByteString;
+import org.checkerframework.checker.units.qual.A;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import org.leevilaune.questland.api.models.Deserialization;
-import org.leevilaune.questland.api.models.guild.Guild;
+import org.leevilaune.questland.api.models.arena.ArenaRanking;
 
-import java.util.Iterator;
 import java.util.concurrent.TimeUnit;
 
-public class GuildClient extends WebSocketListener {
-
-    private Guild returnedGuild;
-    private String returnedJson;
-    private String guildRequest;
+public class ArenaClient extends WebSocketListener {
     private ObjectMapper mapper;
-    private Deserialization deserialization;
-    private String token,version;
-    public GuildClient(String version,String token) {
+    private String request;
+    private String returnedJson;
+    private String token;
+    private String version;
+    public ArenaClient(String token, String version) {
         super();
-        this.deserialization = new Deserialization();
-        this.returnedGuild = new Guild();
-        this.mapper = new ObjectMapper();
-        this.version = version;
+        mapper = new ObjectMapper();
         this.token = token;
-        setMapperConfigurations();
+        this.version = version;
     }
 
-    public Guild getGuild(int id) throws Exception{
-        guildRequest = "{\n" +
-                "   \"req_id\":0,\n" +
-                "   \"platform\":\"android\",\n" +
-                "   \"guild_id\":"+id+",\n" +
-                "   \"version\":\""+version+"\",\n" +
-                "   \"token\":\""+token+"\",\n" +
-                "   \"lang\":\"en\",\n" +
-                "   \"task\":\"logged/guild/getguild\"\n" +
-                "}";
+    public ArenaRanking getRanking() throws Exception{
+        request = "{\"req_id\":0,\"platform\":\"android\",\"type\":\"pvp\",\"ge_kind\":\"\",\"version\":\""+version+"\",\"token\":\""+token+"\",\"lang\":\"en\",\"task\":\"logged/ranking/get\"}";
         run();
         Thread.sleep(2000);
         if(returnedJson == null){
             return null;
         }
-        Guild guild = mapper.readerFor(Guild.class).readValue(deserialization.reformat(id,"guild_info", returnedJson));
-        guild.getpInfo().setGuildPlayers(deserialization.deserializeGuildPlayers(returnedJson));
-        return guild;
-
+        System.out.println(returnedJson);
+        return new ArenaRanking();
     }
-
-    //"{"req_id":17,"platform":"android","type":"global_guild","ge_kind":"","version":"4.11.5.3912","token":"9d5ccbae75c5d35c6a56f78d3855df9a","lang":"en","task":"logged/ranking/get"}";
     private void setMapperConfigurations(){
         this.mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
     }
-
     public void run() {
         OkHttpClient client = new OkHttpClient.Builder()
                 .readTimeout(0,  TimeUnit.MILLISECONDS)
@@ -72,22 +52,12 @@ public class GuildClient extends WebSocketListener {
     }
 
     @Override
-    public void onOpen(@NotNull WebSocket webSocket, @NotNull Response response) {
-        super.onOpen(webSocket, response);
-        try{
-            webSocket.send(guildRequest);
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-    }
-    @Override
     public void onClosed(@NotNull WebSocket webSocket, int code, @NotNull String reason) {
         super.onClosed(webSocket, code, reason);
     }
 
     @Override
     public void onClosing(@NotNull WebSocket webSocket, int code, @NotNull String reason) {
-        System.out.println(reason);
         super.onClosing(webSocket, code, reason);
     }
 
@@ -101,7 +71,7 @@ public class GuildClient extends WebSocketListener {
         if(text.contains("version_requred")){
             System.err.println(text);
         }
-        if(!text.contains("pinfo") || text.contains("messages")){
+        if(text.contains("messages")){
             return;
         }
         returnedJson = text;
@@ -111,5 +81,15 @@ public class GuildClient extends WebSocketListener {
     @Override
     public void onMessage(@NotNull WebSocket webSocket, @NotNull ByteString bytes) {
         super.onMessage(webSocket, bytes);
+    }
+
+    @Override
+    public void onOpen(@NotNull WebSocket webSocket, @NotNull Response response) {
+        super.onOpen(webSocket, response);
+        try{
+            webSocket.send(request);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 }

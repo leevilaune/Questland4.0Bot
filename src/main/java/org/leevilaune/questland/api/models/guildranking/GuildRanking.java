@@ -46,4 +46,14 @@ public class GuildRanking {
     public void setStaticDataTS(int staticDataTS) {
         this.staticDataTS = staticDataTS;
     }
+
+    @Override
+    public String toString() {
+        return "GuildRanking{" +
+                "guildsList=" + guildsList +
+                ", ranking=" + ranking +
+                ", ts=" + ts +
+                ", staticDataTS=" + staticDataTS +
+                '}';
+    }
 }

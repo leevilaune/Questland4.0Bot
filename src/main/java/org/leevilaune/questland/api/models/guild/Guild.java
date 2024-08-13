@@ -54,6 +54,14 @@ public class Guild {
         this.guildAcademyTimers = guildAcademyTimers;
     }
 
+    public String print(){
+        GuildInfo guild = this.guildsList.getGuildInfo();
+        return this.guildsList.getGuildInfo().getN() +
+                "\n    GQE  :   " + guild.getQeRankPoints() +
+                "\n    Level:   " + guild.getLvl() +
+                "\n    Members: " + guild.getM();
+    }
+
     @Override
     public String toString() {
         return "Guild{" +

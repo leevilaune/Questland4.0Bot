@@ -38,19 +38,27 @@ public class CsvGenerator {
     }
 
 
-    public void generateGuildCsv(String guildName) throws Exception {
+    public void generateGuildCsv(String guildName, int id) throws Exception {
         int ind = 0;
 
         Guild g = this.guildSearchClient.getGuild(guildName);
         QuestlandGuild guild = new QuestlandGuild();
         List<Player> players = new ArrayList<>();
-
+        System.out.println(g.getpInfo());
+        /*
         for(GuildPlayer gp : g.getpInfo().getGuildPlayers()){
             System.out.println(ind +"," + gp.getName());
-            players.add(playerClient.getPlayer(gp.getName(),g));
+            Player p = playerClient.getPlayer(gp.getName(),g);
+            System.out.println(p);
+            players.add(p);
             ind++;
         }
-
+        */
+        for(int pID : g.getGuildsList().getGuildInfo().getMembers()){
+            Player p = playerClient.getPlayer(pID);
+            System.out.println(p);
+            players.add(p);
+        }
         for(Player player : players){
             if(player.getPinfo() == null || player.getPinfo().getPlayerInfo() == null){
                 continue;

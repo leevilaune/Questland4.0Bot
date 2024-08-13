@@ -24,18 +24,22 @@ public class GuildSearchClient extends WebSocketListener {
     private ObjectMapper mapper;
     private Deserialization deserialization;
     private GuildClient guildClient;
-    public GuildSearchClient(GuildClient guildClient) {
+    private String version;
+    private String token;
+    public GuildSearchClient(GuildClient guildClient, String version, String token) {
         super();
         this.deserialization = new Deserialization();
         this.returnedGuild = new Guild();
         this.guildClient = guildClient;
         this.mapper = new ObjectMapper();
+        this.version = version;
+        this.token = token;
         setMapperConfigurations();
     }
 
     public Guild getGuild(String name) throws Exception{
 
-        searchRequest = " {\"req_id\":0,\"platform\":\"android\",\"name\":\""+name+"\",\"country\":\"\",\"level\":0,\"req_level\":0,\"req_heropower\":0,\"req_vip\":0,\"not_full\":0,\"recommended\":0,\"version\":\"4.11.5.3912\",\"token\":\"9d5ccbae75c5d35c6a56f78d3855df9a\",\"lang\":\"en\",\"task\":\"logged/guild/searchguild\"}";
+        searchRequest = " {\"req_id\":0,\"platform\":\"android\",\"name\":\""+name+"\",\"country\":\"\",\"level\":0,\"req_level\":0,\"req_heropower\":0,\"req_vip\":0,\"not_full\":0,\"recommended\":0,\"version\":\""+version+"\",\"token\":\""+token+"\",\"lang\":\"en\",\"task\":\"logged/guild/searchguild\"}";
         System.out.println(searchRequest);
         run();
         Thread.sleep(2000);
@@ -44,10 +48,13 @@ public class GuildSearchClient extends WebSocketListener {
         }
         System.out.println(returnedJson);
         JsonNode node = mapper.readerFor(JsonNode.class).readValue(returnedJson);
+        System.out.println(node);
         if(node.get("guilds_search_indices").isEmpty()){
+            System.out.println("indices is null");
             return null;
         }
         Guild guild = guildClient.getGuild(Integer.parseInt(node.get("guilds_list").fieldNames().next()));
+        System.out.println(guild.print());
         return guild;
 
     }
@@ -86,6 +93,7 @@ public class GuildSearchClient extends WebSocketListener {
 
     @Override
     public void onClosing(@NotNull WebSocket webSocket, int code, @NotNull String reason) {
+        System.out.println(reason);
         super.onClosing(webSocket, code, reason);
     }
 

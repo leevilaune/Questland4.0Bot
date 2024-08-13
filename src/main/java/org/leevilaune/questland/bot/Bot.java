@@ -31,6 +31,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.time.LocalDateTime;
 import java.util.Map;
 
 public class Bot {
@@ -143,6 +144,7 @@ public class Bot {
         gateway.onDisconnect().block();
     }
     private String playerLookup(String playerName, String guildName) throws Exception{
+        System.out.println("[Hero]["+ LocalDateTime.now() +"] Searching hero " + playerName);
         Player player = questlandClient.findPlayer(playerName,guildName);
 
         if(player == null){
@@ -163,6 +165,7 @@ public class Bot {
         return response;
     }
     private String guildLookup(String guildName) throws Exception{
+        System.out.println("[Guild]["+ LocalDateTime.now() +"] Searching guild " + guildName);
         Guild guild = questlandClient.findGuild(guildName);
         if(guild == null){
             return "> Guild " +guildName + " not found";
@@ -188,12 +191,13 @@ public class Bot {
         return response;
     }
     private String itemLookup(String itemName){
+        System.out.println("[Item]["+ LocalDateTime.now() +"] Searching item " + itemName);
         Item item = questlandClient.findItem(itemName);
         if(item == null){
             return "Item " + itemName + " not found";
         }
-        String header = "### [__**" + item.getName()+"**__]("+item.getFullUrl()+")";
-        if(item.getFullUrl().isEmpty()){
+        String header = "### [__**" + item.getName()+"**__]("+item.getIconUrl()+")";
+        if(item.getFullUrl() == null || item.getFullUrl().isEmpty()){
             header = "### __**" + item.getName()+"**__";
         }
 
@@ -201,7 +205,7 @@ public class Bot {
                 "\n>>> **Emblem**\n"+item.getEmblem()+
                 "\n**Slot**\n"+item.getSlot()+
                 "\n**Type**\n" + item.getTypeID()+
-                "\n**Potential**\n"+item.getPotential()+
+                "\n** Potential**\n "+item.getPotential()+
                 "\n** Health**\n "+item.getHealth()+
                 "\n** Attack**\n "+item.getAttack()+
                 "\n** Defence**\n "+item.getDefence()+
