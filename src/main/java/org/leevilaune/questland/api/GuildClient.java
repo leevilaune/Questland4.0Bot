@@ -1,5 +1,6 @@
 package org.leevilaune.questland.api;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -21,13 +22,21 @@ public class GuildClient extends WebSocketListener {
     private ObjectMapper mapper;
     private Deserialization deserialization;
     private String token,version;
-    public GuildClient(String version,String token) {
+    private WebSocket ws;
+    private volatile boolean isReady;
+    private Guild guild;
+    private int id;
+
+    private WebSocketClient webSocketClient;
+    public GuildClient(String version,String token, WebSocketClient webSocketClient) {
         super();
         this.deserialization = new Deserialization();
         this.returnedGuild = new Guild();
         this.mapper = new ObjectMapper();
         this.version = version;
         this.token = token;
+        this.isReady = false;
+        this.webSocketClient = webSocketClient;
         setMapperConfigurations();
     }
 
@@ -51,6 +60,15 @@ public class GuildClient extends WebSocketListener {
         return guild;
 
     }
+    private void handle(String json) {
+        try {
+            this.guild = mapper.readerFor(Guild.class).readValue(deserialization.reformat(this.id,"guild_info", json));
+            this.isReady = true;
+        } catch (JsonProcessingException e) {
+            throw new RuntimeException(e);
+        }
+        this.isReady = true;
+    }
 
     //"{"req_id":17,"platform":"android","type":"global_guild","ge_kind":"","version":"4.11.5.3912","token":"9d5ccbae75c5d35c6a56f78d3855df9a","lang":"en","task":"logged/ranking/get"}";
     private void setMapperConfigurations(){
@@ -65,7 +83,7 @@ public class GuildClient extends WebSocketListener {
         Request request = new Request.Builder()
                 .url("wss://prod.ql-api-gamesture.com/ws")
                 .build();
-        client.newWebSocket(request, this);
+        this.ws = client.newWebSocket(request, this);
 
         // Trigger shutdown of the dispatcher's executor so this process can exit cleanly.
         client.dispatcher().executorService().shutdown();
@@ -104,6 +122,7 @@ public class GuildClient extends WebSocketListener {
         if(!text.contains("pinfo") || text.contains("messages")){
             return;
         }
+        handle(text);
         returnedJson = text;
         webSocket.close(1000,null);
     }

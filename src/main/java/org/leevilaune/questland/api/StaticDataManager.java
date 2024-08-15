@@ -194,7 +194,7 @@ public class StaticDataManager {
             this.writer = new FileWriter("data/itemTemplates.json");
             json = mapper.writeValueAsString(this.items);
             node = mapper.readValue(json,JsonNode.class);
-            //writer.write(node.toPrettyString());
+            writer.write(node.toPrettyString());
             writer.flush();
         } catch (IOException e) {
             throw new RuntimeException(e);

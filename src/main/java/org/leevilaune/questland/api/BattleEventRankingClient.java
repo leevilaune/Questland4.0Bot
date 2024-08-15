@@ -7,6 +7,7 @@ import org.jetbrains.annotations.NotNull;
 import org.leevilaune.questland.api.models.beranking.BattleEventRanking;
 import org.leevilaune.questland.api.models.player.Player;
 
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -17,10 +18,12 @@ public class BattleEventRankingClient extends WebSocketListener {
     private String searchRequest;
     private ObjectMapper mapper;
     private PlayerClient playerClient;
+    private volatile boolean isReady;
 
     public BattleEventRankingClient(PlayerClient playerClient){
         this.mapper = new ObjectMapper();
         this.playerClient = playerClient;
+        this.isReady = false;
         //setMapperConfigurations();
     }
 
@@ -29,12 +32,38 @@ public class BattleEventRankingClient extends WebSocketListener {
         run();
         Thread.sleep(2000);
         System.out.println(returnedJson);
-
+        long t = Instant.now().getEpochSecond();
+        while(this.isReady==false){
+            t+=1;
+        }
+        System.out.println(t-Instant.now().getEpochSecond());
         BattleEventRanking ranking = mapper.readerFor(BattleEventRanking.class).readValue(returnedJson);
-
+        this.isReady = false;
         int i = 0;
         List<String> ranks = new ArrayList<>();
+        List<Integer> ids = new ArrayList<>();
         for(List<Integer> rank : ranking.getBattleEvent().getBattleEvent().getLadder()){
+            ids.add(rank.get(1));
+        }
+        for(Player p : playerClient.getMultiple(ids)){
+            try{
+                String s = i+","+p.getPinfo().getPlayerInfo().getBattleEvent().getScore() + ","
+                        + p.getPinfo().getPlayerInfo().getBattleEvent().getMultiplier() + ","
+                        + p.getPinfo().getPlayerInfo().getP().getName() + ","
+                        + p.getPinfo().getPlayerInfo().getP().getId();
+                ranks.add(s);
+                System.out.println(s);
+            }catch (Exception e){
+
+            }
+
+            if(i>100){
+                break;
+            }
+            System.out.println(i);
+            i++;
+        }
+        /*for(List<Integer> rank : ranking.getBattleEvent().getBattleEvent().getLadder()){
             Player p = playerClient.getPlayer(rank.get(1));
 
             try{
@@ -52,7 +81,7 @@ public class BattleEventRankingClient extends WebSocketListener {
                 break;
             }
             i++;
-        }
+        }*/
         for (String s : ranks){
             System.out.println(s);
         }
@@ -91,6 +120,7 @@ public class BattleEventRankingClient extends WebSocketListener {
         }
         //System.out.println(text);
         returnedJson = text;
+        this.isReady = true;
         webSocket.close(1000,null);
     }
 }

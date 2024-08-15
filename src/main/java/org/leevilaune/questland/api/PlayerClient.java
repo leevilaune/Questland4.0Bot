@@ -1,5 +1,6 @@
 package org.leevilaune.questland.api;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -9,12 +10,13 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.leevilaune.questland.api.models.Deserialization;
 import org.leevilaune.questland.api.models.guild.Guild;
-import org.leevilaune.questland.api.models.player.BattleEvent;
-import org.leevilaune.questland.api.models.player.P;
 import org.leevilaune.questland.api.models.player.Player;
+import org.leevilaune.questland.api.requests.player.GetProfileRequest;
 
-import java.util.List;
+import java.time.Instant;
+import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
+import java.util.List;
 
 public class PlayerClient extends WebSocketListener {
 
@@ -24,13 +26,23 @@ public class PlayerClient extends WebSocketListener {
     private Deserialization deserialization;
     private GuildSearchClient guildSearchClient;
     private String token,version;
-    public PlayerClient(GuildSearchClient guildSearchClient,String token, String version) {
+    private WebSocket ws;
+    private volatile boolean isReady;
+    private Player player;
+    private int id;
+
+    private WebSocketClient webSocketClient;
+    public PlayerClient(GuildSearchClient guildSearchClient,String token, String version, WebSocketClient webSocketClient) {
         super();
         this.deserialization = new Deserialization();
         this.mapper = new ObjectMapper();
         this.guildSearchClient = guildSearchClient;
         this.token = token;
         this.version = version;
+        this.isReady = false;
+        this.player = null;
+
+        this.webSocketClient = webSocketClient;
         setMapperConfigurations();
     }
 
@@ -56,19 +68,34 @@ public class PlayerClient extends WebSocketListener {
         return player;
 
     }
-    public Player getPlayer(int id) throws Exception{
-        playerRequest = "{\"req_id\":0,\"platform\":\"android\",\"player_id\":"+id+",\"version\":\""+version+"\",\"token\":\""+token+"\",\"lang\":\"en\",\"task\":\"logged/player/getprofile\"}";
+    /*public Player getPlayer(int id) throws Exception{
+        this.isReady = false;
+        this.id = id;
         run();
-        Thread.sleep(2000);
-        if(returnedJson == null){
-            return null;
+        this.ws.send(mapper.writeValueAsString(new GetProfileRequest(0,token,version,id)));
+        long t = Instant.now().getEpochSecond();
+        while(this.isReady==false){
         }
-        System.out.println(returnedJson);
-        Player player = mapper.readerFor(Player.class).readValue(deserialization.reformat(id,"player_info",returnedJson));
-        //BattleEvent battleEvent = deserialization.deserializePlayerBattleEvent(returnedJson,id);
-        //player.getPinfo().getPlayerInfo().setBattleEvent(battleEvent);
-        return player;
-
+        System.out.println(t-Instant.now().getEpochSecond());
+        return this.player;
+    }*/
+    public Player getPlayer(int id) throws JsonProcessingException {
+        String  node = this.webSocketClient.sendRequest(new GetProfileRequest(0,token,version,id));
+        this.id = id;
+        return mapper.readerFor(Player.class).readValue(deserialization.reformat(id,"player_info",node.toString()));
+    }
+    public List<Player> getMultiple(List<Integer> ids) throws Exception {
+        List<Player> players = new ArrayList<>();
+        int i = 0;
+        for(int id : ids){
+            players.add(getPlayer(id));
+            Thread.sleep(100);
+            i++;
+            if(i>100){
+                break;
+            }
+        }
+        return players;
     }
     public Player getPlayer(String name, Guild guild) throws Exception{
 
@@ -83,6 +110,18 @@ public class PlayerClient extends WebSocketListener {
         return player;
 
     }
+
+    public void handle(String json){
+        try {
+            this.player = mapper.readerFor(Player.class).readValue(deserialization.reformat(this.id,"player_info",json));
+            this.isReady = true;
+        } catch (JsonProcessingException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println(player);
+        this.isReady = true;
+    }
+
     private void setMapperConfigurations(){
         this.mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
     }
@@ -95,7 +134,7 @@ public class PlayerClient extends WebSocketListener {
         Request request = new Request.Builder()
                 .url("wss://prod.ql-api-gamesture.com/ws")
                 .build();
-        client.newWebSocket(request, this);
+        this.ws = client.newWebSocket(request, this);
 
         // Trigger shutdown of the dispatcher's executor so this process can exit cleanly.
         client.dispatcher().executorService().shutdown();
@@ -105,7 +144,7 @@ public class PlayerClient extends WebSocketListener {
     public void onOpen(@NotNull WebSocket webSocket, @NotNull Response response) {
         super.onOpen(webSocket, response);
         try{
-            webSocket.send(playerRequest);
+            //webSocket.send(playerRequest);
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -136,6 +175,7 @@ public class PlayerClient extends WebSocketListener {
         if(text.contains("messages")){
             return;
         }
+        handle(text);
         returnedJson = text;
         System.out.println(text);
         webSocket.close(1000,null);

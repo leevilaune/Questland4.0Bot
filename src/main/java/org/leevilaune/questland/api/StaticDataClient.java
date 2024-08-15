@@ -6,7 +6,7 @@ import okhttp3.*;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.leevilaune.questland.Logger;
-import org.leevilaune.questland.bot.api.requests.staticdata.StaticDataRequest;
+import org.leevilaune.questland.api.requests.staticdata.StaticDataRequest;
 
 import java.util.concurrent.TimeUnit;
 

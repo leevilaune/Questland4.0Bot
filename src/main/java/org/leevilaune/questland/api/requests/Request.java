@@ -1,4 +1,4 @@
-package org.leevilaune.questland.bot.api.requests;
+package org.leevilaune.questland.api.requests;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

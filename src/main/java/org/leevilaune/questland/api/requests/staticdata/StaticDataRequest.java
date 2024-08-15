@@ -1,6 +1,6 @@
-package org.leevilaune.questland.bot.api.requests.staticdata;
+package org.leevilaune.questland.api.requests.staticdata;
 
-import org.leevilaune.questland.bot.api.requests.Request;
+import org.leevilaune.questland.api.requests.Request;
 
 import java.time.Instant;
 

@@ -7,10 +7,8 @@ import org.leevilaune.questland.api.GuildSearchClient;
 import org.leevilaune.questland.api.PlayerClient;
 import org.leevilaune.questland.api.models.Deserialization;
 import org.leevilaune.questland.api.models.guild.Guild;
-import org.leevilaune.questland.api.models.guild.GuildPlayer;
 import org.leevilaune.questland.api.models.player.Player;
 import org.leevilaune.questland.api.models.player.PlayerInfo;
-import org.leevilaune.questland.api.models.requests.PlayerRequest;
 import org.leevilaune.questland.csv.models.QuestlandGuild;
 import org.leevilaune.questland.csv.models.QuestlandPlayer;
 
@@ -43,22 +41,9 @@ public class CsvGenerator {
 
         Guild g = this.guildSearchClient.getGuild(guildName);
         QuestlandGuild guild = new QuestlandGuild();
-        List<Player> players = new ArrayList<>();
+        List<Player> players = playerClient.getMultiple(g.getGuildsList().getGuildInfo().getMembers());
         System.out.println(g.getpInfo());
-        /*
-        for(GuildPlayer gp : g.getpInfo().getGuildPlayers()){
-            System.out.println(ind +"," + gp.getName());
-            Player p = playerClient.getPlayer(gp.getName(),g);
-            System.out.println(p);
-            players.add(p);
-            ind++;
-        }
-        */
-        for(int pID : g.getGuildsList().getGuildInfo().getMembers()){
-            Player p = playerClient.getPlayer(pID);
-            System.out.println(p);
-            players.add(p);
-        }
+
         for(Player player : players){
             if(player.getPinfo() == null || player.getPinfo().getPlayerInfo() == null){
                 continue;
