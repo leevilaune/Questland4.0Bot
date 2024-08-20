@@ -12184,4 +12184,16 @@
   "quality" : "legendary",
   "slot" : "usable",
   "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_special_special_woman_cosmetics_nature_VI_high_hd_379c66974bb1ba26b0181223984387cb.png" ]
+}, {
+  "id" : 39524,
+  "name" : "Explorer's Hat - Male",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_hair_hair_cosmetics_forest_excursion_hat_2_hd_9ee3674a63a3217578e79d9c60b1b1fb.png" ]
+}, {
+  "id" : 39525,
+  "name" : "Explorer's Hat - Female",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_hair_hair_woman_cosmetics_forest_excursion_hat_2_sd_e423f7a1f8faa8828ce2557011894b7a.png" ]
 } ]

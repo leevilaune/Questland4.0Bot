@@ -8,6 +8,7 @@ public class StaticEvent {
     private int name;
     private long startTS;
     private long endTS;
+    private int milestones;
     private List<StaticEventTab> tabs;
 
     public int getId() {
@@ -40,6 +41,14 @@ public class StaticEvent {
 
     public void setEndTS(long endTS) {
         this.endTS = endTS;
+    }
+
+    public int getMilestones() {
+        return milestones;
+    }
+
+    public void setMilestones(int milestones) {
+        this.milestones = milestones;
     }
 
     public List<StaticEventTab> getTabs() {

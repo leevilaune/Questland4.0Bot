@@ -31,6 +31,7 @@ public class StaticDataManager {
     private List<StaticQuestTask> questTasks;
     private List<StaticEvent> events;
     private List<StaticWearableSet> emblems;
+    private List<StaticMilestone> milestones;
 
     private List<String> csvs;
 
@@ -55,9 +56,13 @@ public class StaticDataManager {
         this.questTasks = new ArrayList<>();
         this.events = new ArrayList<>();
         this.emblems = new ArrayList<>();
+        this.milestones = new ArrayList<>();
         try(BufferedReader br = new BufferedReader(new FileReader("staticdata1.txt"))) {
             String currentFile = "";
             for (String line; (line = br.readLine()) != null; ) {
+                if(line.isBlank()){
+                    continue;
+                }
                 if (String.valueOf(line.charAt(0)).equalsIgnoreCase("+")) {
                     if (line.equalsIgnoreCase("+static_itemtemplates")) {
                         currentFile = line;
@@ -77,7 +82,10 @@ public class StaticDataManager {
                     } else if(line.equalsIgnoreCase("+static_wearablesets")){
                         currentFile = line;
                         continue;
-                    } else{
+                    } else if(line.equalsIgnoreCase("+static_milestones")){
+                        currentFile = line;
+                        continue;
+                    }else{
                         currentFile = "";
                         continue;
                     }
@@ -154,6 +162,7 @@ public class StaticDataManager {
                     event.setName(node.get(0).asInt());
                     event.setStartTS(node.get(5).asLong());
                     event.setEndTS(node.get(6).asLong());
+                    event.setMilestones(node.get(25).asInt());
                     for(int i = 0; i<tabsNode.size();i++){
                         StaticEventTab tab = new StaticEventTab();
                         tab.setName(tabsNode.get(i).get(0).get(0).asText());
@@ -175,10 +184,30 @@ public class StaticDataManager {
                     JsonNode node = mapper.readValue(parts[1], JsonNode.class);
                     emblem.setName(node.get(0).asInt());
                     this.emblems.add(emblem);
+                }else if(currentFile.equalsIgnoreCase("+static_milestones")){
+                    String[] parts = line.split(",",2);
+                    JsonNode node = mapper.readValue(parts[1],JsonNode.class);
+                    StaticMilestone milestones = new StaticMilestone();
+                    milestones.setId(Integer.valueOf(parts[0]));
+                    List<StaticReward> rewardList = new ArrayList<>();
+                    for(int i = 0;i<=node.get("rewards").size();i++){
+                        JsonNode rewardsNode = node.get("rewards").get(i);
+                        if(rewardsNode==null){
+                            continue;
+                        }
+                        StaticReward reward = new StaticReward();
+                        reward.setRequiredPoints(rewardsNode.get(0).asInt());
+                        reward.setItem(rewardsNode.get(1).get(0).get(0).asInt());
+                        reward.setAmount(rewardsNode.get(1).get(0).get(1).asInt());
+                        rewardList.add(reward);
+                    }
+                    milestones.setRewards(rewardList);
+                    //System.out.println(milestones);
+                    this.milestones.add(milestones);
                 }
             }
         } catch (Exception e){
-            System.err.println(e);
+            e.printStackTrace();
         }
         try {
             this.writer = new FileWriter("data/clientStrings.json");
@@ -193,6 +222,11 @@ public class StaticDataManager {
             writer.flush();
             this.writer = new FileWriter("data/itemTemplates.json");
             json = mapper.writeValueAsString(this.items);
+            node = mapper.readValue(json,JsonNode.class);
+            writer.write(node.toPrettyString());
+            writer.flush();
+            this.writer = new FileWriter("data/milestones.json");
+            json = mapper.writeValueAsString(this.milestones);
             node = mapper.readValue(json,JsonNode.class);
             writer.write(node.toPrettyString());
             writer.flush();
@@ -336,7 +370,31 @@ public class StaticDataManager {
             System.out.println(staticFiles.get(i).generateURL());
         }
     }
+    private HashMap<Integer,List<RewardModel>> combineMilestones(){
+        List<MilestoneModel> milestones = new ArrayList<>();
+        HashMap<Integer,List<RewardModel>> milestonesMap = new HashMap<>();
+        for(StaticMilestone sm : this.milestones){
+            MilestoneModel mm = new MilestoneModel();
+            mm.setId(sm.getId());
+            List<RewardModel> rewards = new ArrayList<>();
+            for(StaticReward sr : sm.getRewards()){
+                RewardModel reward = new RewardModel();
+                reward.setAmount(sr.getAmount());
+                reward.setRequiredPoints(sr.getRequiredPoints());
+                StaticItemTemplate sit = this.items.stream().filter(i -> i.getId()==sr.getItem()).findFirst().get();
+                String name = this.getClientString(sit.getName());
+                reward.setItem(name);
+                rewards.add(reward);
+            }
+            milestonesMap.put(sm.getId(),rewards);
+            mm.setRewards(rewards);
+            milestones.add(mm);
+            //System.out.println(mm);
+        }
+        return milestonesMap;
+    }
     public void combineEvents(){
+        HashMap<Integer,List<RewardModel>> milestones = combineMilestones();
         for(int i = this.events.size()-1;i>=0;i--){
             Instant startTS = Instant.ofEpochMilli(events.get(i).getStartTS()*1000);
             Instant endTS = Instant.ofEpochMilli(events.get(i).getEndTS()*1000);
@@ -361,6 +419,15 @@ public class StaticDataManager {
                 for(int k : this.events.get(i).getTabs().get(j).getTasks().keySet()){
                     System.out.println("    "+getTaskString(k) + "="+ this.events.get(i).getTabs().get(j).getTasks().get(k));
                 }
+            }
+            int finalI = i;
+            List<RewardModel> milestone = milestones.get(this.events.get(finalI).getMilestones());
+            if(milestone==null){
+                continue;
+            }
+            System.out.println("    MILESTONES");
+            for(RewardModel rm : milestone){
+                System.out.println("     "+rm.getRequiredPoints() + ": " + rm.getItem() +" | "+ rm.getAmount());
             }
         }
         try {
@@ -404,14 +471,14 @@ public class StaticDataManager {
         List<String> wearableSlots = new ArrayList<>(Arrays.stream(wearables).collect(Collectors.toList()));
         for(StaticFile sf : this.staticFiles){
             System.out.println(sf.getId());
-            if(sf.getId()<216023){
+            if(sf.getId()<216050){
                 break;
             }
             if(sf.generateURL()==null){
                 continue;
             }
             String[] s = sf.generateURL().split("/");
-            saveImage(sf.generateURL(),filePath+"new1723470750/"+s[s.length-1]);
+            saveImage(sf.generateURL(),filePath+s[s.length-1]);
             /*if(s[s.length-1].contains("glyph")){
                 saveImage(sf.generateURL(),filePath+"glyphs/"+s[s.length-1]);
             }else if(containsFromList(s[s.length-1],wearables)){

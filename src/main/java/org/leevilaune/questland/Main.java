@@ -39,6 +39,7 @@ public class Main {
         StaticDataManager staticDataManager = new StaticDataManager();
         //staticDataManager.combineEvents();
         staticDataManager.combineItems();
+        staticDataManager.saveImages("graphics/");
 
         //guildSearchClient.getGuild("impero del lupo");
 

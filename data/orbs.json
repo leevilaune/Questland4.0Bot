@@ -23897,90 +23897,6 @@
   "myth" : null,
   "links" : null
 }, {
-  "id" : 38818,
-  "name" : "Forbidden Lovers",
-  "quality" : "legendary",
-  "slot" : "orb",
-  "urls" : null,
-  "stats" : {
-    "dmg" : null,
-    "def" : null,
-    "hp" : [ 784, 213 ],
-    "magic" : null
-  },
-  "myth" : null,
-  "links" : null
-}, {
-  "id" : 38820,
-  "name" : "Envoy's Arrival",
-  "quality" : "legendary",
-  "slot" : "orb",
-  "urls" : null,
-  "stats" : {
-    "dmg" : [ 784, 213 ],
-    "def" : null,
-    "hp" : null,
-    "magic" : null
-  },
-  "myth" : null,
-  "links" : null
-}, {
-  "id" : 38822,
-  "name" : "Gaze of Ruin",
-  "quality" : "legendary",
-  "slot" : "orb",
-  "urls" : null,
-  "stats" : {
-    "dmg" : null,
-    "def" : [ 784, 213 ],
-    "hp" : null,
-    "magic" : null
-  },
-  "myth" : null,
-  "links" : null
-}, {
-  "id" : 38824,
-  "name" : "Forbidden Lovers",
-  "quality" : "artifact1",
-  "slot" : "orb",
-  "urls" : null,
-  "stats" : {
-    "dmg" : null,
-    "def" : null,
-    "hp" : [ 2910, 291 ],
-    "magic" : null
-  },
-  "myth" : null,
-  "links" : null
-}, {
-  "id" : 38826,
-  "name" : "Envoy's Arrival",
-  "quality" : "artifact1",
-  "slot" : "orb",
-  "urls" : null,
-  "stats" : {
-    "dmg" : [ 2910, 291 ],
-    "def" : null,
-    "hp" : null,
-    "magic" : null
-  },
-  "myth" : null,
-  "links" : null
-}, {
-  "id" : 38828,
-  "name" : "Gaze of Ruin",
-  "quality" : "artifact1",
-  "slot" : "orb",
-  "urls" : null,
-  "stats" : {
-    "dmg" : null,
-    "def" : [ 2910, 291 ],
-    "hp" : null,
-    "magic" : null
-  },
-  "myth" : null,
-  "links" : null
-}, {
   "id" : 38844,
   "name" : "Battle Master +",
   "quality" : "mythical",
@@ -24905,34 +24821,6 @@
   "myth" : null,
   "links" : null
 }, {
-  "id" : 39224,
-  "name" : "Abandoned Throne",
-  "quality" : "mythical",
-  "slot" : "orb",
-  "urls" : null,
-  "stats" : {
-    "dmg" : [ 2860, 286 ],
-    "def" : null,
-    "hp" : null,
-    "magic" : null
-  },
-  "myth" : null,
-  "links" : null
-}, {
-  "id" : 39225,
-  "name" : "The Longest Wait",
-  "quality" : "mythical",
-  "slot" : "orb",
-  "urls" : null,
-  "stats" : {
-    "dmg" : null,
-    "def" : null,
-    "hp" : [ 2860, 286 ],
-    "magic" : null
-  },
-  "myth" : null,
-  "links" : null
-}, {
   "id" : 39329,
   "name" : "Tectonic Thud",
   "quality" : "rare",
@@ -25264,6 +25152,188 @@
     "dmg" : null,
     "def" : [ 133, 43 ],
     "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 38818,
+  "name" : "Forbidden Lovers",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 784, 213 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 38820,
+  "name" : "Envoy's Arrival",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 784, 213 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 38822,
+  "name" : "Gaze of Ruin",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 784, 213 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 38824,
+  "name" : "Forbidden Lovers",
+  "quality" : "artifact1",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 2910, 291 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 38826,
+  "name" : "Envoy's Arrival",
+  "quality" : "artifact1",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 2910, 291 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 38828,
+  "name" : "Gaze of Ruin",
+  "quality" : "artifact1",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 2910, 291 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39224,
+  "name" : "Abandoned Throne",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 2860, 286 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39225,
+  "name" : "The Longest Wait",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 2860, 286 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39512,
+  "name" : "Budding Power",
+  "quality" : "rare",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 45, 15 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39513,
+  "name" : "Blooming Power",
+  "quality" : "epic",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 72, 24 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39514,
+  "name" : "Flourishing Power",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 133, 43 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39527,
+  "name" : "Envoy's Arrival",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 2860, 286 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39528,
+  "name" : "Forbidden Lovers",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 2860, 286 ],
     "magic" : null
   },
   "myth" : null,
