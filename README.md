@@ -368,3 +368,15 @@ public class StaticDataRequest extends Request {
 }
 
 ```
+
+## 03 Finding values
+
+### 3.1 Finding player token on bluestacks.
+
+#### 1. Open up Media Manager
+#### 2. Go to `Android/data/com.gamesture.questland/files/beskar/logs`
+In there you have 5 latest log files named with Unix timestamp. Search for any request
+for example `logged/player/void` below you'll find json form request which has `token`
+field, there is your player token
+🔴Important🔴
+Using this api is against ToS, it is not recommended to use your main account's token
