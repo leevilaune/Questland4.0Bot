@@ -314,7 +314,7 @@ As JSON:
     "version" : "",
     "token" : "",
     "lang" : "",
-    "task" : "logged/guild/getguild"
+    "task" : "logged/player/getprofile"
 }
 ```
 As Java model:
