@@ -169,19 +169,37 @@ player token and game version, lets create `apiValues.csv`
 ```csv
 token,version
 ```
-
-
+To use our `GetProfileRequest` we need 4 parameters, rest are handled in constructor
+```
+reqID     = request id, index of request during this connection
+token     = player token, account authentication token, we'll go
+            into how to obtain it later
+version   = game version, can be found in game settings and the api
+            will return the required version if you try to use old
+            version
+playerID  = can be found in ingame settings for yourself, and there are
+            ways to find it with the api, which we'll go into later
+```
 ```java
 import project.path.WebSocketClient;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import java.nio.file.Files;
+import java.nio.file.Path;
+
 public class Main {
 
     public static void main(String[] args) throws Exception {
+
+        String apiValues = Files.readString(Path.of("src/main/resources/questlandApiValues.csv"));
+        String[] values = apiValues.split(",");
+        String token = values[0];
+        String version = values[1];
+
         ObjectMapper mapper = new ObjectMapper();
 
         WebSocketClient client = new WebSocketClient();
-        client.sendRequest(new GetProfileRequest());
+        client.sendRequest(new GetProfileRequest(0,token,version,11987825));
     }
 }
 ```
