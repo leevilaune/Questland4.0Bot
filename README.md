@@ -1,8 +1,8 @@
 # Questland API
 
-## Setting up
+## 01 Setting up on Java
 
-### Java
+### 1.1 Creating WebSocketClient
 
 Using `okhttp3.WebSocketListener` you can send requests to the server. Lets create a `WebSocketClient` class that inherits `okhttp3.WebSocketListener`.
 ```java
@@ -66,6 +66,8 @@ public class WebSocketClient extends WebSocketListener {
 }
 
 ```
+
+### 1.2 Creating Request models
 
 Creating  `Request` class.
 
@@ -162,6 +164,8 @@ public class GetProfileRequest extends Request {
     }
 }
 ```
+### 1.3 Sending Requests
+
 So far we have created a way to make requests to the server and modeled the request into class. Next up is actually sending the request. 
 Since we convert the request to json in `WebSocketClient.sendRequest()` we dont have to worry about that here. How ever we do need 
 player token and game version, lets create `apiValues.csv`
@@ -204,5 +208,7 @@ public class Main {
     }
 }
 ```
+
+## 
 If we did everything correctly, we should get monstrosity of a json return.
 
