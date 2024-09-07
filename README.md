@@ -377,6 +377,12 @@ public class StaticDataRequest extends Request {
 #### 2. Go to `Android/data/com.gamesture.questland/files/beskar/logs`
 In there you have 5 latest log files named with Unix timestamp. Search for any request
 for example `logged/player/void` below you'll find json form request which has `token`
-field, there is your player token
-🔴Important🔴
-Using this api is against ToS, it is not recommended to use your main account's token
+field, there is your player token. Please note that using this api is against ToS, it is not 
+recommended to use your main account's token
+
+### 3.2 Finding player and guild ids
+You can find your own player id ingame `more/settings/player id`.
+
+Finding someone else's id is bit more tricky. There are few ways, easiest is
+knowing what guild theyre in. Sending `GuildSearchRequest` and finding `pinfo`-field
+on the returned JSON. Using that same request you can find guild id.
