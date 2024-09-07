@@ -213,8 +213,10 @@ If we did everything correctly, we should get monstrosity of a json return.
 
 ## 02 Most common data request
 
-### 2.1 Guild by Id
-To get guild by id we need to send `getguild`-request.
+### 2.1 `logged/guild/getguild`
+To get guild by id we need to send `getguild`-request. For this you need to know the id of
+the guild youre trying to get.
+As JSON:
 ```json
 {
     "req_id" : 0,
@@ -226,7 +228,7 @@ To get guild by id we need to send `getguild`-request.
     "task" : "logged/guild/getguild"
 }
 ```
-As java model it would be
+As Java model:
 ```java
 import com.fasterxml.jackson.annotation.JsonProperty;
 import project.path.Request;
@@ -242,4 +244,96 @@ public class GetGuildRequest extends Request {
 
     }
 }
+```
+The return is a single guild json.
+
+### 2.2 Search Guild
+Searching guild you dont need to know the id of the guild.
+As JSON:
+```json
+{
+    "req_id" : 0,
+    "platform" : "",
+    "name" : "",
+    "country" : "",
+    "level" : 0,
+    "req_level" : 0,
+    "red_heropower" : 0,
+    "req_vip" : 0,
+    "not_full" : 0,
+    "recommended" : 0,
+    "version" : "",
+    "token" : "",
+    "lang" : "",
+    "task" : "logged/guild/getguild"
+}
+```
+Most of the fields can be left as default values, and theyre just used
+for filtering. `not_full` and `recommended` fields only take values `0,1`
+As Java model:
+```java
+import com.fasterxml.jackson.annotation.JsonProperty;
+import project.path.Request;
+
+public class SearchGuildRequest extends Request {
+
+    @JsonProperty("name")
+    private String name;
+    @JsonProperty("country")
+    private String country;
+    @JsonProperty("level")
+    private int level;
+    @JsonProperty("req_level")
+    private int redLevel;
+    @JsonProperty("req_heropower")
+    private int reqHeroPower;
+    @JsonProperty("req_vip")
+    private int reqVip;
+    @JsonProperty("not_full")
+    private int notFull;
+    @JsonProperty("recommended")
+    private int recommended;
+
+
+    public SearchGuildRequest(int reqID, String token,String version,String name){
+        super(token,reqID,"android",version,"logged/guild/searchguild","us");
+        this.name = name;
+    }
+}
+```
+The return is list of guilds, even if there is only one result
+
+### 2.3 Get static data
+Get static data, has everything from items to crafts. Everytime something is pushed
+from server, static data is updated.
+As JSON:
+```json
+{
+    "req_id" : 0,
+    "platform" : "",
+    "ts" : 0,
+    "version" : "",
+    "token" : "",
+    "lang" : "",
+    "task" : "unlogged/getstaticdata"
+}
+```
+As Java model:
+```java
+import com.fasterxml.jackson.annotation.JsonProperty;
+import org.leevilaune.questland.api.requests.Request;
+
+import java.time.Instant;
+
+public class StaticDataRequest extends Request {
+
+    @JsonProperty("ts")
+    private long ts;
+
+    public StaticDataRequest(int reqID,String token,String version){
+        super(token,reqID,"android",version,"unlogged/getstaticdata","us");
+        this.ts = Instant.now().getEpochSecond();
+    }
+}
+
 ```
