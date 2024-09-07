@@ -162,4 +162,26 @@ public class GetProfileRequest extends Request {
     }
 }
 ```
+So far we have created a way to make requests to the server and modeled the request into class. Next up is actually sending the request. 
+Since we convert the request to json in `WebSocketClient.sendRequest()` we dont have to worry about that here. How ever we do need 
+player token and game version, lets create `apiValues.csv`
 
+```csv
+token,version
+```
+
+
+```java
+import project.path.WebSocketClient;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+public class Main {
+
+    public static void main(String[] args) throws Exception {
+        ObjectMapper mapper = new ObjectMapper();
+
+        WebSocketClient client = new WebSocketClient();
+        client.sendRequest(new GetProfileRequest());
+    }
+}
+```
