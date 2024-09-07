@@ -247,7 +247,7 @@ public class GetGuildRequest extends Request {
 ```
 The return is a single guild json.
 
-### 2.2 Search Guild
+### 2.2 `logged/guild/getguild`
 Searching guild you dont need to know the id of the guild.
 As JSON:
 ```json
@@ -303,7 +303,38 @@ public class SearchGuildRequest extends Request {
 ```
 The return is list of guilds, even if there is only one result
 
-### 2.3 Get static data
+### 2.3 `logged/player/getprofile`
+Used to get player data, has information about player gear, stats, battle event and other
+As JSON:
+```json
+{
+    "req_id" : 0,
+    "platform" : "",
+    "player_id" : 0,
+    "version" : "",
+    "token" : "",
+    "lang" : "",
+    "task" : "logged/guild/getguild"
+}
+```
+As Java model:
+```java
+import com.fasterxml.jackson.annotation.JsonProperty;
+import project.path.Request;
+
+public class GetProfileRequest extends Request {
+
+    @JsonProperty("player_id")
+    private int playerID;
+
+    public GetProfileRequest(int reqID,String token,String version, int playerID){
+        super(token,reqID,"android",version,"logged/player/getprofile","us");
+        this.playerID = playerID;
+    }
+}
+```
+
+### 2.4 `unlogged/getstaticdata`
 Get static data, has everything from items to crafts. Everytime something is pushed
 from server, static data is updated.
 As JSON:
@@ -321,7 +352,7 @@ As JSON:
 As Java model:
 ```java
 import com.fasterxml.jackson.annotation.JsonProperty;
-import org.leevilaune.questland.api.requests.Request;
+import project.path.Request;
 
 import java.time.Instant;
 
