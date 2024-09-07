@@ -209,6 +209,37 @@ public class Main {
 }
 ```
 
-## 
 If we did everything correctly, we should get monstrosity of a json return.
 
+## 02 Most common data request
+
+### 2.1 Guild by Id
+To get guild by id we need to send `getguild`-request.
+```json
+{
+    "req_id" : int,
+    "platform" : string,
+    "guild_id" : int,
+    "version" : string,
+    "token" : string,
+    "lang" : string
+    "task" : "logged/guild/getguild"
+}
+```
+As java model it would be
+```java
+import com.fasterxml.jackson.annotation.JsonProperty;
+import project.path.Request;
+
+public class GetGuildRequest extends Request {
+
+    @JsonProperty("guild_id")
+    private int guildID;
+
+    public GetGuildRequest(int reqID, String token, String version, int guildID){
+        super(token,reqID,"android",version,"logged/guild/getguild","us");
+        this.guildID = guildID;
+
+    }
+}
+```
