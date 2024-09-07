@@ -217,12 +217,12 @@ If we did everything correctly, we should get monstrosity of a json return.
 To get guild by id we need to send `getguild`-request.
 ```json
 {
-    "req_id" : int,
-    "platform" : string,
-    "guild_id" : int,
-    "version" : string,
-    "token" : string,
-    "lang" : string
+    "req_id" : 0,
+    "platform" : "",
+    "guild_id" : 0,
+    "version" : "",
+    "token" : "",
+    "lang" : "",
     "task" : "logged/guild/getguild"
 }
 ```
