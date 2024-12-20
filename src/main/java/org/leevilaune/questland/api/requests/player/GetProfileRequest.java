@@ -6,9 +6,9 @@ import org.leevilaune.questland.api.requests.Request;
 public class GetProfileRequest extends Request {
 
     @JsonProperty("player_id")
-    private int playerID;
+    private String playerID;
 
-    public GetProfileRequest(int reqID,String token,String version, int playerID){
+    public GetProfileRequest(int reqID,String token,String version, String playerID){
         super(token,reqID,"android",version,"logged/player/getprofile","us");
         this.playerID = playerID;
     }

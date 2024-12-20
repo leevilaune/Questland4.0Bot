@@ -10073,12 +10073,6 @@
   "slot" : "usable",
   "urls" : [ "https://storage.googleapis.com/ql4-files-eu/avatar_frame_roaring_comeback_ind_39d32c394a51058230b3e9c58c497146.png" ]
 }, {
-  "id" : 37228,
-  "name" : "Furry Frame",
-  "quality" : "legendary",
-  "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/avatar_frame_roaring_comeback_guild_5d8afdd704e33fdda69481794cc6ef99.png" ]
-}, {
   "id" : 37240,
   "name" : "Necropriest Skull - Male",
   "quality" : "legendary",
@@ -11279,18 +11273,6 @@
   "slot" : "usable",
   "urls" : [ "https://storage.googleapis.com/ql4-files-eu/05_29_avatar_frame_eclipse_encounter_de791a209984ec70055cc162a6c0f1ad.png" ]
 }, {
-  "id" : 38977,
-  "name" : "Solstice Sigil",
-  "quality" : "legendary",
-  "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_solstice_celebration_leg_sd_d934cacb73d58d92afd61371ae270362.png" ]
-}, {
-  "id" : 38978,
-  "name" : "Sun Spark",
-  "quality" : "rare",
-  "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_solstice_celebration_rare_sd_803a07713b7da325b8b0de1faaf36d5c.png" ]
-}, {
   "id" : 38979,
   "name" : "Solstice Frame",
   "quality" : "legendary",
@@ -11314,12 +11296,6 @@
   "quality" : "legendary",
   "slot" : "usable",
   "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_hair_hair_woman_cosmetics_solstice_celebration_hd_043d9de8638986d3e7ab1756ab4e811b.png" ]
-}, {
-  "id" : 38985,
-  "name" : "Double Craft Token",
-  "quality" : "rare",
-  "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_qe_2x_token_sd_e28f15a542df3029dfe945f98266c8d4.png" ]
 }, {
   "id" : 38882,
   "name" : "Beastmaster Coin",
@@ -11411,11 +11387,167 @@
   "slot" : "usable",
   "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_sunfire_letter_e_sd_afa45aa46ceee15d66ab22b546496df8.png" ]
 }, {
-  "id" : 38999,
-  "name" : "Weasel's Lifebuoy",
+  "id" : 39001,
+  "name" : "Lifebuoy Frame",
   "quality" : "legendary",
   "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_summer_splash_lifebuoy_leg_sd_d568eee38b2c4b7812721b108aaac0ec.png" ]
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/06_20_avatar_frame_summer_splash_86560565b8f5cae55f2b64eb8cc60088.png" ]
+}, {
+  "id" : 39143,
+  "name" : "Moth's Antennae - Female",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_special_special_woman_cosmetics_venom_V_hd_9431aa1f2f98e33b980e262731bd9b45.png" ]
+}, {
+  "id" : 39142,
+  "name" : "Moth's Antennae - Male",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_special_special_cosmetics_venom_V_hd_33cec7d9256ffd910e24aa105970d957.png" ]
+}, {
+  "id" : 39149,
+  "name" : "Moth's Watchfulness - Male",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_special_special_cosmetics_venom_V_high_hd_d0c5e370385ba4288d304bf23ce9e867.png" ]
+}, {
+  "id" : 39150,
+  "name" : "Moth's Watchfulness - Female",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_special_special_woman_cosmetics_venom_V_high_hd_109b71fa4e2c650c38aa50963e2be144.png" ]
+}, {
+  "id" : 39219,
+  "name" : "Golden Paw",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_forest_excursion_token_sd_dc6e8ea59127fa62d5c85d092cf106bf.png" ]
+}, {
+  "id" : 39227,
+  "name" : "Mothman Gaze - Male",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_eyes_eyes_venom_V_hd_7c72263612e8cddc132481ce6911c34c.png" ]
+}, {
+  "id" : 39228,
+  "name" : "Mothman Gaze - Female",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_eyes_eyes_woman_venom_V_hd_b8599ec556c8bc160f397fccfddf728d.png" ]
+}, {
+  "id" : 39251,
+  "name" : "European Frame",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/07_10_avatar_frame_football_cd65c2ebf8e722306e2bb834871dea09.png" ]
+}, {
+  "id" : 39252,
+  "name" : "American Frame",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/07_10_avatar_frame_football_copa_0fcc5e9188d9ca29254715f47ad2d80c.png" ]
+}, {
+  "id" : 36296,
+  "name" : "Rune of Heroism",
+  "quality" : "common",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_BE_Rune_of_Heroism_sd_78bb9f4acf2651350008b4019a642ec2.png" ]
+}, {
+  "id" : 39314,
+  "name" : "Hydra's Head",
+  "quality" : "artifact1",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_hydra_head_art_sd_fb68873c382c24f399958f0f3ded3401.png" ]
+}, {
+  "id" : 39343,
+  "name" : "Kamyczek Mocy",
+  "quality" : "epic",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_the_final_hour_crystal_shard_epic_sd_d1989fd4fe6b4b5c030868a2a246774e.png" ]
+}, {
+  "id" : 39495,
+  "name" : "Root Crown - Male",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_special_special_cosmetics_nature_VI_hd_8141b37c845f8dc3a045b054e9c9f678.png" ]
+}, {
+  "id" : 39496,
+  "name" : "Root Crown - Female",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_special_special_woman_cosmetics_nature_VI_hd_972a1ecbe0d8a68ba8cd4651fc420e5e.png" ]
+}, {
+  "id" : 39499,
+  "name" : "Crown Overgrown - Male",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_special_special_cosmetics_nature_VI_high_hd_4b460c16d24ff597ced13ff90616b5a3.png" ]
+}, {
+  "id" : 39500,
+  "name" : "Crown Overgrown - Female",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_special_special_woman_cosmetics_nature_VI_high_hd_379c66974bb1ba26b0181223984387cb.png" ]
+}, {
+  "id" : 39524,
+  "name" : "Explorer's Hat - Male",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_hair_hair_cosmetics_forest_excursion_hat_2_hd_9ee3674a63a3217578e79d9c60b1b1fb.png" ]
+}, {
+  "id" : 39525,
+  "name" : "Explorer's Hat - Female",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_hair_hair_woman_cosmetics_forest_excursion_hat_2_sd_e423f7a1f8faa8828ce2557011894b7a.png" ]
+}, {
+  "id" : 39557,
+  "name" : "Green Laurel Frame",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/08_08_avatar_frame_champions_2024_guild_bc428c73b23cd1becc65e451e23a382e.png" ]
+}, {
+  "id" : 39558,
+  "name" : "Golden Laurel Frame",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/08_08_avatar_frame_champions_2024_ind_e61ca79e168aea20d85e1be8d85144fd.png" ]
+}, {
+  "id" : 37228,
+  "name" : "Furry Frame ",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/avatar_frame_roaring_comeback_guild_5d8afdd704e33fdda69481794cc6ef99.png" ]
+}, {
+  "id" : 39569,
+  "name" : "7th Anniversary Hat - Male",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_hair_hair_cosmetics_7_year_cap_hd_2d59f04acd6ac755412081b2c817995a.png" ]
+}, {
+  "id" : 39570,
+  "name" : "7th Anniversary Hat - Female",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_hair_hair_woman_cosmetics_7_year_cap_hd_221e23054326848abd460aad9f7e8959.png" ]
+}, {
+  "id" : 38977,
+  "name" : "Solstice Sigil",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_solstice_celebration_leg_sd_d934cacb73d58d92afd61371ae270362.png" ]
+}, {
+  "id" : 38978,
+  "name" : "Sun Spark",
+  "quality" : "rare",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_solstice_celebration_rare_sd_803a07713b7da325b8b0de1faaf36d5c.png" ]
+}, {
+  "id" : 38985,
+  "name" : "Double Craft Token",
+  "quality" : "rare",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_qe_2x_token_sd_e28f15a542df3029dfe945f98266c8d4.png" ]
 }, {
   "id" : 38998,
   "name" : "Lifebuoy Blueprint",
@@ -11423,35 +11555,11 @@
   "slot" : "usable",
   "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_summer_splash_lifebuoy_scheme_rare_sd_b2f381f1dc8ca267603fe7d63956e342.png" ]
 }, {
-  "id" : 39001,
-  "name" : "Lifebuoy Frame",
+  "id" : 38999,
+  "name" : "Weasel's Lifebuoy",
   "quality" : "legendary",
   "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/06_20_avatar_frame_summer_splash_86560565b8f5cae55f2b64eb8cc60088.png" ]
-}, {
-  "id" : 39139,
-  "name" : "Golden Cup",
-  "quality" : "legendary",
-  "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_football_cup_leg_sd_624887d0af378a0225af5b2aa2564763.png" ]
-}, {
-  "id" : 39140,
-  "name" : "Football",
-  "quality" : "epic",
-  "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_football_ball_epic_sd_0626b6ff21c1f21824bfc7d958f22c3d.png" ]
-}, {
-  "id" : 39138,
-  "name" : "Select Token",
-  "quality" : "legendary",
-  "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_football_token_2024_sd_36294f252b707507fa465c31577f85e6.png" ]
-}, {
-  "id" : 39141,
-  "name" : "Expertise",
-  "quality" : "legendary",
-  "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_football_expert_ticket_sd_214631778527ecfdd92eee7894b2dade.png" ]
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_summer_splash_lifebuoy_leg_sd_d568eee38b2c4b7812721b108aaac0ec.png" ]
 }, {
   "id" : 39116,
   "name" : "Spain",
@@ -11470,42 +11578,6 @@
   "quality" : "common",
   "slot" : "usable",
   "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_flag_Denmark_sd_78fcbbca4197e9f2908e6a852a87ddec.png" ]
-}, {
-  "id" : 39123,
-  "name" : "England",
-  "quality" : "common",
-  "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_flag_England_sd_4b6b20f8339245e24ed0faad73bbc214.png" ]
-}, {
-  "id" : 39124,
-  "name" : "Switzerland",
-  "quality" : "common",
-  "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_flag_Switzerland_sd_8013638ae4a3778e6f194e5852e19655.png" ]
-}, {
-  "id" : 39125,
-  "name" : "Italy",
-  "quality" : "common",
-  "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_flag_Italy_sd_8779d9537fdaa4bbd7776d5b45d19254.png" ]
-}, {
-  "id" : 39126,
-  "name" : "Georgia",
-  "quality" : "common",
-  "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_flag_Georgia_sd_b8ef6039dc43fd61bcdc2e30d0fe3272.png" ]
-}, {
-  "id" : 39128,
-  "name" : "Slovakia",
-  "quality" : "common",
-  "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_flag_Slovakia_sd_94f91e8fafecbabcd33ef2512d3e2d3d.png" ]
-}, {
-  "id" : 39143,
-  "name" : "Moth's Antennae - Female",
-  "quality" : "legendary",
-  "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_special_special_woman_cosmetics_venom_V_hd_9431aa1f2f98e33b980e262731bd9b45.png" ]
 }, {
   "id" : 39119,
   "name" : "Portugal",
@@ -11531,11 +11603,41 @@
   "slot" : "usable",
   "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_flag_Austria_sd_ac7a2e940c99577bd1250aa09c901ce6.png" ]
 }, {
+  "id" : 39123,
+  "name" : "England",
+  "quality" : "common",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_flag_England_sd_4b6b20f8339245e24ed0faad73bbc214.png" ]
+}, {
+  "id" : 39124,
+  "name" : "Switzerland",
+  "quality" : "common",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_flag_Switzerland_sd_8013638ae4a3778e6f194e5852e19655.png" ]
+}, {
+  "id" : 39125,
+  "name" : "Italy",
+  "quality" : "common",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_flag_Italy_sd_8779d9537fdaa4bbd7776d5b45d19254.png" ]
+}, {
+  "id" : 39126,
+  "name" : "Georgia",
+  "quality" : "common",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_flag_Georgia_sd_b8ef6039dc43fd61bcdc2e30d0fe3272.png" ]
+}, {
   "id" : 39127,
   "name" : "Slovenia",
   "quality" : "common",
   "slot" : "usable",
   "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_flag_Slovenia_sd_7c9c674f4d146c474ea87f596b090ce7.png" ]
+}, {
+  "id" : 39128,
+  "name" : "Slovakia",
+  "quality" : "common",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_flag_Slovakia_sd_94f91e8fafecbabcd33ef2512d3e2d3d.png" ]
 }, {
   "id" : 39129,
   "name" : "Romania",
@@ -11555,29 +11657,53 @@
   "slot" : "usable",
   "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_flag_Turkey_sd_51c24d2b42b5eb628cefb2a3f9c50b06.png" ]
 }, {
-  "id" : 39142,
-  "name" : "Moth's Antennae - Male",
+  "id" : 39138,
+  "name" : "Select Token",
   "quality" : "legendary",
   "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_special_special_cosmetics_venom_V_hd_33cec7d9256ffd910e24aa105970d957.png" ]
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_football_token_2024_sd_36294f252b707507fa465c31577f85e6.png" ]
 }, {
-  "id" : 39149,
-  "name" : "Moth's Watchfulness - Male",
+  "id" : 39139,
+  "name" : "Golden Cup",
   "quality" : "legendary",
   "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_special_special_cosmetics_venom_V_high_hd_d0c5e370385ba4288d304bf23ce9e867.png" ]
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_football_cup_leg_sd_624887d0af378a0225af5b2aa2564763.png" ]
 }, {
-  "id" : 39150,
-  "name" : "Moth's Watchfulness - Female",
+  "id" : 39140,
+  "name" : "Football",
+  "quality" : "epic",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_football_ball_epic_sd_0626b6ff21c1f21824bfc7d958f22c3d.png" ]
+}, {
+  "id" : 39141,
+  "name" : "Expertise",
   "quality" : "legendary",
   "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_special_special_woman_cosmetics_venom_V_high_hd_109b71fa4e2c650c38aa50963e2be144.png" ]
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_football_expert_ticket_sd_214631778527ecfdd92eee7894b2dade.png" ]
+}, {
+  "id" : 39181,
+  "name" : "Ecuador",
+  "quality" : "common",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_flag_Ecuador_sd_849bf226da9a28dfc16b7b3c598c9c02.png" ]
 }, {
   "id" : 39182,
   "name" : "Argentina",
   "quality" : "common",
   "slot" : "usable",
   "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_flag_Argentina_sd_1b9c3ef653d522c9ecf3af636749f81e.png" ]
+}, {
+  "id" : 39183,
+  "name" : "Venezuela",
+  "quality" : "common",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_flag_Venezuela_sd_bf19d995093f7efd44ec33466a855fac.png" ]
+}, {
+  "id" : 39184,
+  "name" : "Canada",
+  "quality" : "common",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_flag_Canada_sd_eda21901bdc29fdf9d99de1861f4d0d2.png" ]
 }, {
   "id" : 39185,
   "name" : "Uruguay",
@@ -11596,24 +11722,6 @@
   "quality" : "common",
   "slot" : "usable",
   "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_flag_Columbia_sd_c5cc72c71a245d30c8a29f52927fd2da.png" ]
-}, {
-  "id" : 39181,
-  "name" : "Ecuador",
-  "quality" : "common",
-  "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_flag_Ecuador_sd_849bf226da9a28dfc16b7b3c598c9c02.png" ]
-}, {
-  "id" : 39183,
-  "name" : "Venezuela",
-  "quality" : "common",
-  "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_flag_Venezuela_sd_bf19d995093f7efd44ec33466a855fac.png" ]
-}, {
-  "id" : 39184,
-  "name" : "Canada",
-  "quality" : "common",
-  "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_flag_Canada_sd_eda21901bdc29fdf9d99de1861f4d0d2.png" ]
 }, {
   "id" : 39188,
   "name" : "Panama",
@@ -11723,24 +11831,6 @@
   "slot" : "usable",
   "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_qe_2x_token_leg_sd_a46d48fa6b016612b0cccc913ae4d2b4.png" ]
 }, {
-  "id" : 39219,
-  "name" : "Golden Paw",
-  "quality" : "legendary",
-  "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_forest_excursion_token_sd_dc6e8ea59127fa62d5c85d092cf106bf.png" ]
-}, {
-  "id" : 39227,
-  "name" : "Mothman Gaze - Male",
-  "quality" : "legendary",
-  "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_eyes_eyes_venom_V_hd_7c72263612e8cddc132481ce6911c34c.png" ]
-}, {
-  "id" : 39228,
-  "name" : "Mothman Gaze - Female",
-  "quality" : "legendary",
-  "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_eyes_eyes_woman_venom_V_hd_b8599ec556c8bc160f397fccfddf728d.png" ]
-}, {
   "id" : 39230,
   "name" : "Netherlands, goal difference 1",
   "quality" : "common",
@@ -11789,18 +11879,6 @@
   "slot" : "usable",
   "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_flag_England_sd_4b6b20f8339245e24ed0faad73bbc214.png" ]
 }, {
-  "id" : 39251,
-  "name" : "European Frame",
-  "quality" : "legendary",
-  "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/07_10_avatar_frame_football_cd65c2ebf8e722306e2bb834871dea09.png" ]
-}, {
-  "id" : 39252,
-  "name" : "American Frame",
-  "quality" : "legendary",
-  "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/07_10_avatar_frame_football_copa_0fcc5e9188d9ca29254715f47ad2d80c.png" ]
-}, {
   "id" : 39253,
   "name" : "Uruguay, goal difference 1",
   "quality" : "common",
@@ -11848,6 +11926,12 @@
   "quality" : "common",
   "slot" : "usable",
   "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_flag_Columbia_sd_c5cc72c71a245d30c8a29f52927fd2da.png" ]
+}, {
+  "id" : 39261,
+  "name" : "Spain, goal difference 1",
+  "quality" : "common",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_flag_Spain_sd_69d3bca0fe03cc7670fddc49742fe137.png" ]
 }, {
   "id" : 39262,
   "name" : "Spain, goal difference 2",
@@ -12089,24 +12173,6 @@
   "slot" : "usable",
   "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_flag_Uruguay_sd_12b33c10572a9bda3391c07b8d868798.png" ]
 }, {
-  "id" : 39261,
-  "name" : "Spain, goal difference 1",
-  "quality" : "common",
-  "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_flag_Spain_sd_69d3bca0fe03cc7670fddc49742fe137.png" ]
-}, {
-  "id" : 36296,
-  "name" : "Rune of Heroism",
-  "quality" : "common",
-  "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_BE_Rune_of_Heroism_sd_78bb9f4acf2651350008b4019a642ec2.png" ]
-}, {
-  "id" : 39314,
-  "name" : "Hydra's Head",
-  "quality" : "artifact1",
-  "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_hydra_head_art_sd_fb68873c382c24f399958f0f3ded3401.png" ]
-}, {
   "id" : 39315,
   "name" : "Hydra's Fang",
   "quality" : "legendary",
@@ -12118,12 +12184,6 @@
   "quality" : "epic",
   "slot" : "usable",
   "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_hydra_scale_epic_sd_d33e70e1f997b4cfac28f7b94cb02ec8.png" ]
-}, {
-  "id" : 39343,
-  "name" : "Kamyczek Mocy",
-  "quality" : "epic",
-  "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_the_final_hour_crystal_shard_epic_sd_d1989fd4fe6b4b5c030868a2a246774e.png" ]
 }, {
   "id" : 39347,
   "name" : "Hydra Jackpot",
@@ -12161,39 +12221,513 @@
   "slot" : "usable",
   "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_champions_tournament_laurel_sd_ae338ee45e2862b61ff57bb631e2786e.png" ]
 }, {
-  "id" : 39495,
-  "name" : "Root Crown - Male",
-  "quality" : "legendary",
+  "id" : 39531,
+  "name" : "Envelope",
+  "quality" : "rare",
   "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_special_special_cosmetics_nature_VI_hd_8141b37c845f8dc3a045b054e9c9f678.png" ]
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_anniversary_prelude_envelope_rare_sd_94505292de65088930c163021b667ec9.png" ]
 }, {
-  "id" : 39496,
-  "name" : "Root Crown - Female",
+  "id" : 39532,
+  "name" : "Invitation Card",
   "quality" : "legendary",
   "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_special_special_woman_cosmetics_nature_VI_hd_972a1ecbe0d8a68ba8cd4651fc420e5e.png" ]
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_anniversary_prelude_card_leg_sd_4ac348ff478a77cf41547dd403662529.png" ]
 }, {
-  "id" : 39499,
-  "name" : "Crown Overgrown - Male",
-  "quality" : "legendary",
+  "id" : 39533,
+  "name" : "Letter P",
+  "quality" : "rare",
   "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_special_special_cosmetics_nature_VI_high_hd_4b460c16d24ff597ced13ff90616b5a3.png" ]
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_anniversary_prelude_letter_P_sd_df2a08490982a0f8bd1a98b0be1dabb0.png" ]
 }, {
-  "id" : 39500,
-  "name" : "Crown Overgrown - Female",
-  "quality" : "legendary",
+  "id" : 39534,
+  "name" : "Letter A",
+  "quality" : "rare",
   "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_special_special_woman_cosmetics_nature_VI_high_hd_379c66974bb1ba26b0181223984387cb.png" ]
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_anniversary_prelude_letter_A_sd_5a88e8edd7c652e18a51e446395e21fb.png" ]
 }, {
-  "id" : 39524,
-  "name" : "Explorer's Hat - Male",
-  "quality" : "legendary",
+  "id" : 39535,
+  "name" : "Letter R",
+  "quality" : "rare",
   "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_hair_hair_cosmetics_forest_excursion_hat_2_hd_9ee3674a63a3217578e79d9c60b1b1fb.png" ]
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_anniversary_prelude_letter_R_sd_f98a743049de238e511933dc4be01c87.png" ]
 }, {
-  "id" : 39525,
-  "name" : "Explorer's Hat - Female",
+  "id" : 39536,
+  "name" : "Letter T",
+  "quality" : "rare",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_anniversary_prelude_letter_T_sd_e351733b689908deb8d7af813cac2534.png" ]
+}, {
+  "id" : 39537,
+  "name" : "Letter Y",
+  "quality" : "rare",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_anniversary_prelude_letter_Y_sd_cd8c4e8b5a510d5c1aafc14f95fbd7e0.png" ]
+}, {
+  "id" : 39567,
+  "name" : "Sweet Treat",
+  "quality" : "epic",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_celebration_7_year_epic_sd_9ef6bcf898336bb3438f173f06bae918.png" ]
+}, {
+  "id" : 39568,
+  "name" : "Festive Cake",
   "quality" : "legendary",
   "slot" : "usable",
-  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_hair_hair_woman_cosmetics_forest_excursion_hat_2_sd_e423f7a1f8faa8828ce2557011894b7a.png" ]
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_celebration_7_year_leg_sd_18e47247cf13d3eab8638605e7dc9796.png" ]
+}, {
+  "id" : 39582,
+  "name" : "Kitter Token",
+  "quality" : "epic",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_kitterpryde_sd_55e9209af8aeb564b50345a74eae70ac.png" ]
+}, {
+  "id" : 39595,
+  "name" : "Insignia Token",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_academy_emblem_insignia_sd_a2f24a4fd106a70f1bf52cdb4f76b700.png" ]
+}, {
+  "id" : 39596,
+  "name" : "Academy of Arcanum Emblem",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_academy_emblem_arcanum_sd_407bdd1dc433041fe1fb308b75d458c9.png" ]
+}, {
+  "id" : 39597,
+  "name" : "Academy of Steel Emblem",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_academy_emblem_steel_sd_08b2d59cb080ed4a875e8287e4ba3da8.png" ]
+}, {
+  "id" : 39598,
+  "name" : "Parchment",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_academy_papyrus_sd_c38d51d501b8a57a44b97e7d111d651a.png" ]
+}, {
+  "id" : 39599,
+  "name" : "Inkwell",
+  "quality" : "epic",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_academy_ink_sd_5d7c81c30711f2add6bdb02483e31464.png" ]
+}, {
+  "id" : 39600,
+  "name" : "Prestige Points",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_academy_prestige_points_sd_2af78c6bf063f12f2866f48a9ed4287f.png" ]
+}, {
+  "id" : 39601,
+  "name" : "ANSWER TOKEN",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_academy_test_CHECK_sd_33a05ff5099552898b4ef7eb7ae4e528.png" ]
+}, {
+  "id" : 39602,
+  "name" : "ANSWER A - 7M",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_academy_test_A_sd_7a03250713d141aef08672c7839bfcdf.png" ]
+}, {
+  "id" : 39603,
+  "name" : "ANSWER B - 9M",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_academy_test_B_sd_d35ea5e162d421b01b520ecc68e68d50.png" ]
+}, {
+  "id" : 39604,
+  "name" : "ANSWER C - 10M",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_academy_test_C_sd_5bf256432edefdce8e053d4d2f31dc47.png" ]
+}, {
+  "id" : 39605,
+  "name" : "ANSWER D - 11M",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_academy_test_D_sd_7229978206239bb28a5673e1998580c7.png" ]
+}, {
+  "id" : 39606,
+  "name" : "ANSWER A - 130",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_academy_test_A_sd_7a03250713d141aef08672c7839bfcdf.png" ]
+}, {
+  "id" : 39607,
+  "name" : "ANSWER B - 150",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_academy_test_B_sd_d35ea5e162d421b01b520ecc68e68d50.png" ]
+}, {
+  "id" : 39608,
+  "name" : "ANSWER C - 160",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_academy_test_C_sd_5bf256432edefdce8e053d4d2f31dc47.png" ]
+}, {
+  "id" : 39609,
+  "name" : "ANSWER D - 180",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_academy_test_D_sd_7229978206239bb28a5673e1998580c7.png" ]
+}, {
+  "id" : 39610,
+  "name" : "ANSWER A - 3",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_academy_test_A_sd_7a03250713d141aef08672c7839bfcdf.png" ]
+}, {
+  "id" : 39611,
+  "name" : "ANSWER B - 4",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_academy_test_B_sd_d35ea5e162d421b01b520ecc68e68d50.png" ]
+}, {
+  "id" : 39612,
+  "name" : "ANSWER C - 5",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_academy_test_C_sd_5bf256432edefdce8e053d4d2f31dc47.png" ]
+}, {
+  "id" : 39613,
+  "name" : "ANSWER D - 6",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_academy_test_D_sd_7229978206239bb28a5673e1998580c7.png" ]
+}, {
+  "id" : 39627,
+  "name" : "ANSWER A - Last Resort",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_academy_test_A_sd_7a03250713d141aef08672c7839bfcdf.png" ]
+}, {
+  "id" : 39628,
+  "name" : "ANSWER B - Sky Scepter",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_academy_test_B_sd_d35ea5e162d421b01b520ecc68e68d50.png" ]
+}, {
+  "id" : 39629,
+  "name" : "ANSWER C - Right Hand of the Thunder God",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_academy_test_C_sd_5bf256432edefdce8e053d4d2f31dc47.png" ]
+}, {
+  "id" : 39630,
+  "name" : "ANSWER D - Raijin's Anger",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_academy_test_D_sd_7229978206239bb28a5673e1998580c7.png" ]
+}, {
+  "id" : 39631,
+  "name" : "ANSWER A - Raijin's Judgement",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_academy_test_A_sd_7a03250713d141aef08672c7839bfcdf.png" ]
+}, {
+  "id" : 39632,
+  "name" : "ANSWER B - Gleaming Guardian",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_academy_test_B_sd_d35ea5e162d421b01b520ecc68e68d50.png" ]
+}, {
+  "id" : 39633,
+  "name" : "ANSWER C - Left Hand of the Thunder God",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_academy_test_C_sd_5bf256432edefdce8e053d4d2f31dc47.png" ]
+}, {
+  "id" : 39634,
+  "name" : "ANSWER D - Flag of Justice",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_academy_test_D_sd_7229978206239bb28a5673e1998580c7.png" ]
+}, {
+  "id" : 39639,
+  "name" : "Double Craft Token",
+  "quality" : "rare",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_qe_2x_token_sd_e28f15a542df3029dfe945f98266c8d4.png" ]
+}, {
+  "id" : 39756,
+  "name" : "Fractured Shard",
+  "quality" : "epic",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_beyond_the_limit_eternal_shard_crumbs_epic_sd_b8e36591813f93260001844ad9806610.png" ]
+}, {
+  "id" : 39841,
+  "name" : "Token of Rebirth",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_beyond_the_limit_token_hp_sd_349933a277ef8496997426c87a972b2f.png" ]
+}, {
+  "id" : 39842,
+  "name" : "Token of Destruction",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_beyond_the_limit_token_attack_sd_62be2e221669abe57e8e9ecf2c2eb773.png" ]
+}, {
+  "id" : 39843,
+  "name" : "Token of Sorcery",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_beyond_the_limit_token_magic_sd_1479fb433b96c941bb910b31faa12495.png" ]
+}, {
+  "id" : 39844,
+  "name" : "Token of Resilience",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_beyond_the_limit_token_armor_sd_9c2cf067addb4ecea074d55a67e28a71.png" ]
+}, {
+  "id" : 39754,
+  "name" : "Eternal Shard",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_beyond_the_limit_eternal_shard_sd_08b795c3e21a3893695516ddb33eadf6.png" ]
+}, {
+  "id" : 39857,
+  "name" : "Steel Token",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_rank_token_leg_sd_0513cbcb3cb0d4f0e40e1f34ad5800f2.png" ]
+}, {
+  "id" : 39858,
+  "name" : "Grim Concoction",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_season_witching_hour_potion_sd_4f59e0dec6703ca4e08a25ec978c411f.png" ]
+}, {
+  "id" : 39867,
+  "name" : "Pumpkin Witch - Male",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_special_special_top_cosmetics_halloween_2024_hd_177ce40974ef388a8009d1cdadc15dba.png" ]
+}, {
+  "id" : 39868,
+  "name" : "Pumpkin Witch - Female",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_special_special_woman_top_cosmetics_halloween_2024_hd_857a0e6d9e246cfc0876e4bb25770ded.png" ]
+}, {
+  "id" : 39872,
+  "name" : "Bandit's Mantle - Male",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_special_special_top_cosmetics_guild_reward_death_VI_hd_3613abe2e6e97fd3abdedb1f5470ceb3.png" ]
+}, {
+  "id" : 39873,
+  "name" : "Bandit's Mantle - Female",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_special_special_woman_top_cosmetics_guild_reward_death_VI_hd_4586ab88677f0a0602f6fd42017cabb9.png" ]
+}, {
+  "id" : 39876,
+  "name" : "Renegade's Mantle - Male",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_special_special_top_cosmetics_guild_reward_death_VI_high_hd_5198125945d7d9b488d706f3ccc8ba26.png" ]
+}, {
+  "id" : 39877,
+  "name" : "Renegade's Mantle - Female",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_special_special_woman_top_cosmetics_guild_reward_death_VI_high_hd_6f26f33cbec969c6770eb672b5b3d524.png" ]
+}, {
+  "id" : 39755,
+  "name" : "Transcendence Gem",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_beyond_the_limit_transcendence_shard_sd_dc3014221c4dced84c548cb3a4d4d8de.png" ]
+}, {
+  "id" : 40007,
+  "name" : "Apple Basket",
+  "quality" : "epic",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_golden_orchard_epic_sd_1b82feacce9775ab0e42bb10e0899be0.png" ]
+}, {
+  "id" : 40008,
+  "name" : "Golden Apple",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_golden_orchard_leg_sd_5d34ebdc788669c8249b6b72cb83775d.png" ]
+}, {
+  "id" : 40032,
+  "name" : "Spooky Spider",
+  "quality" : "epic",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_haunted_realm_spider_epic_sd_935cfea805daf0c1ebc512d5524d141e.png" ]
+}, {
+  "id" : 40033,
+  "name" : "Spooky Pumpkin",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_haunted_realm_pumpkin_leg_sd_aa418e6be1e5e018d56f72648b0874da.png" ]
+}, {
+  "id" : 40046,
+  "name" : "Weapon Token",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_haunted_realm_token_sword_leg_sd_c184ba636e0c660b2b7a5261bf039d8b.png" ]
+}, {
+  "id" : 40034,
+  "name" : "Spooky Token",
+  "quality" : "artifact1",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_haunted_realm_token_art_sd_7a5f73517aa22a73d386349f82a5c1be.png" ]
+}, {
+  "id" : 40059,
+  "name" : "Fox Spirit Mask - Male",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_special_special_top_cosmetics_hallow_eve_2024_fox_hd_9ed67497b12233d787e561c17825b44a.png" ]
+}, {
+  "id" : 40060,
+  "name" : "Fox Spirit Mask - Female",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_special_special_woman_top_cosmetics_hallow_eve_2024_fox_hd_01841602e9ee37c3858cb4f32b1435ab.png" ]
+}, {
+  "id" : 40062,
+  "name" : "Phantom Mask - Male",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_special_special_top_cosmetics_hallow_eve_2024_phantom_mask_hd_260e93ba0c1cd8caaeae3c9a1e68845a.png" ]
+}, {
+  "id" : 40063,
+  "name" : "Phantom Mask - Female",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_special_special_woman_top_cosmetics_hallow_eve_2024_phantom_mask_hd_9d594de72adc36195bddb134c2faa9ff.png" ]
+}, {
+  "id" : 40065,
+  "name" : "Crawling Spiders - Male",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_special_special_top_cosmetics_hallow_eve_2024_spider_hd_3afb7f8c5c4b8e2f1c5264cd548a717a.png" ]
+}, {
+  "id" : 40066,
+  "name" : "Crawling Spiders - Female",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_special_special_woman_top_cosmetics_hallow_eve_2024_spider_hd_9e32e569d8f223ac90b285808e1eb2b9.png" ]
+}, {
+  "id" : 40068,
+  "name" : "Mad Alchemist Hair - Male",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_hair_hair_cosmetics_hollowe_eve_2024_hd_1a681aef258492e65f5d029e98fc683d.png" ]
+}, {
+  "id" : 40069,
+  "name" : "Mad Alchemist Hair - Female",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_hair_hair_woman_cosmetics_hollowe_eve_2024_hd_87607a170f95da436f9401b19df36ca3.png" ]
+}, {
+  "id" : 40206,
+  "name" : "Small Bat",
+  "quality" : "epic",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_wings_of_the_nightfall_epic_sd_0d45c80117d50241c9b3b4ebfe5d8756.png" ]
+}, {
+  "id" : 40205,
+  "name" : "Night Bat",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_wings_of_the_nightfall_leg_sd_adeedaf46060e9454f012488be6d85e8.png" ]
+}, {
+  "id" : 40221,
+  "name" : "Noble Count Hair - Male",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_hair_hair_cosmetics_noble_VI_guild_reward_hd_1e93ccf0cfe1ac0a725c4478d02adaa8.png" ]
+}, {
+  "id" : 40222,
+  "name" : "Noble Count Hair - Female",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_hair_hair_woman_cosmetics_noble_VI_guild_reward_hd_43a39b9ca593063bb1c1a3ecdd39ebb6.png" ]
+}, {
+  "id" : 40225,
+  "name" : "Vampire Diadem - Male",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_special_special_top_cosmetics_guild_reward_noble_VI_high_hd_4baad40a5e5c51e070390723c633ba24.png" ]
+}, {
+  "id" : 40226,
+  "name" : "Vampire Diadem - Female",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/icon_hero_item_special_special_woman_top_cosmetics_guild_reward_noble_VI_high_hd_86dbf713f2a5de94f1187b68192815c1.png" ]
+}, {
+  "id" : 40245,
+  "name" : "Fresh Corn",
+  "quality" : "rare",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_feast_harvest_rare_corn_sd_99d55fbeb7548d2e120f95ada61da8f3.png" ]
+}, {
+  "id" : 40246,
+  "name" : "Festive Turkey",
+  "quality" : "legendary",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_feast_harvest_leg_turkey_sd_05519159c83939433da3a64cafdf71e6.png" ]
+}, {
+  "id" : 40247,
+  "name" : "Golden Turkey",
+  "quality" : "artifact1",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_feast_harvest_art_gold_turkey_sd_eb04d23fc44245e4204b9c6ba043768b.png" ]
+}, {
+  "id" : 40248,
+  "name" : "Letter T",
+  "quality" : "rare",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_thanksgiving_letter_T_sd_9482433dcf15ccfad84d4669d856f794.png" ]
+}, {
+  "id" : 40249,
+  "name" : "Letter H",
+  "quality" : "rare",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_thanksgiving_letter_H_sd_d1bb7277225d3bbff25b4417d01762ba.png" ]
+}, {
+  "id" : 40250,
+  "name" : "Letter A",
+  "quality" : "rare",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_thanksgiving_letter_A_sd_1fa89b7dc19a06db678283d83d2253b6.png" ]
+}, {
+  "id" : 40251,
+  "name" : "Letter N",
+  "quality" : "rare",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_thanksgiving_letter_N_sd_281b6f13d0605ca92d11f95a610472cc.png" ]
+}, {
+  "id" : 40252,
+  "name" : "Letter K",
+  "quality" : "rare",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_thanksgiving_letter_K_sd_101293460f1240bc134694fd08d5cc4c.png" ]
+}, {
+  "id" : 40253,
+  "name" : "Letter S",
+  "quality" : "rare",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_thanksgiving_letter_S_sd_b5cc2b4c7e3eabc938a3fd11c498ea67.png" ]
+}, {
+  "id" : 40254,
+  "name" : "Letter G",
+  "quality" : "rare",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_thanksgiving_letter_G_sd_9b45ee8f86cf1327466b032c0edab473.png" ]
+}, {
+  "id" : 40255,
+  "name" : "Letter I",
+  "quality" : "rare",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_thanksgiving_letter_I_sd_be24ebfaae69430ff24652da6131f8b4.png" ]
+}, {
+  "id" : 40256,
+  "name" : "Letter V",
+  "quality" : "rare",
+  "slot" : "usable",
+  "urls" : [ "https://storage.googleapis.com/ql4-files-eu/prev_hero_item_other_thanksgiving_letter_V_sd_bfd046a61c47141e9109d28f26759fe4.png" ]
 } ]

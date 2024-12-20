@@ -51,17 +51,17 @@ public class ItemModel {
     }
 
     public String csv(){
-        String csv = "";
-        csv+=this.id+",";
-        csv+=this.name+",";
-        csv+=this.slot+",";
-        csv+=this.quality+",";
-        if(this.urls.size()>0){
+        StringBuilder csv = new StringBuilder();
+        csv.append(this.id).append(",");
+        csv.append(this.name).append(",");
+        csv.append(this.slot).append(",");
+        csv.append(this.quality).append(",");
+        if(!this.urls.isEmpty()){
             for(String s : this.urls){
-                csv+=s+",";
+                csv.append(s).append(",");
             }
         }
-        return csv;
+        return csv.toString();
     }
 
     @Override

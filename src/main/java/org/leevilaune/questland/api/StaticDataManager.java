@@ -123,6 +123,7 @@ public class StaticDataManager {
                     JsonNode node = mapper.readValue(parts[2], JsonNode.class);
                     clientString.setId(Integer.valueOf(parts[0]));
                     clientString.setEn(node.get("en").asText());
+                    clientString.setIt(node.get("it").asText());
                     clientStrings.add(clientString);
                 } else if (currentFile.equalsIgnoreCase("+static_files")) {
                     String[] parts = line.split(",", 5);
@@ -240,17 +241,17 @@ public class StaticDataManager {
         List<String> wearableSlots = new ArrayList<>(Arrays.stream(wearables).collect(Collectors.toList()));
         for(int i = items.size()-1; i>0;i--){
             int finalI = i;
-            //if(items.get(i).getId()<38000){
-            //    continue;
-            //}
+            /*if(items.get(i).getId()<38000){
+                continue;
+            }*/
             List<String> urls = new ArrayList<>();
             try {
                 urls.add(staticFiles.stream().filter(c->c.getId()==items.get(finalI).getItemGraphicSd()).findFirst().get().generateURL());
-            } catch (Exception e) {
+            } catch (Exception ignored) {
             }
             try {
                 urls.add(staticFiles.stream().filter(c->c.getId()==items.get(finalI).getItemGraphicPreview()).findFirst().get().generateURL());
-            } catch (Exception e) {
+            } catch (Exception ignored) {
             }
             GearModel item = new GearModel();
             item.setSlot(items.get(i).getSlot());
@@ -264,7 +265,7 @@ public class StaticDataManager {
                     item.setUrls(urls);
                     this.skins.add(item);
                     continue;
-                } else if(items.get(i).getLinks().size()>0){
+                } else if(!items.get(i).getLinks().isEmpty()){
                     List<StaticLinks> l = items.get(i).getLinks();
                     item.setGearLinkType(l.get(0).getBonusStat());
                     List<Integer> gearLinks = new ArrayList<>();
@@ -393,7 +394,7 @@ public class StaticDataManager {
         }
         return milestonesMap;
     }
-    public void combineEvents(){
+    public void combineEvents(String lang){
         HashMap<Integer,List<RewardModel>> milestones = combineMilestones();
         for(int i = this.events.size()-1;i>=0;i--){
             Instant startTS = Instant.ofEpochMilli(events.get(i).getStartTS()*1000);
@@ -417,7 +418,7 @@ public class StaticDataManager {
                     System.out.print(Color.RESET);
                 }
                 for(int k : this.events.get(i).getTabs().get(j).getTasks().keySet()){
-                    System.out.println("    "+getTaskString(k) + "="+ this.events.get(i).getTabs().get(j).getTasks().get(k));
+                    System.out.println("    "+getTaskString(k,lang) + "="+ this.events.get(i).getTabs().get(j).getTasks().get(k));
                 }
             }
             int finalI = i;
@@ -463,15 +464,18 @@ public class StaticDataManager {
         return this.itemModels.stream().filter(i->i.getId()==id).findFirst().get().getName();
     }
 
-    public String getTaskString(int id){
-        return this.questTasks.stream().filter(q->q.getId()==id).findFirst().get().getTaskString(clientStrings);
+    public String getTaskString(int id, String lang){
+        return this.questTasks.stream().filter(q->q.getId()==id).findFirst().get().getTaskString(clientStrings,lang);
+    }
+    public StaticQuestTask getTask(int id){
+        return this.questTasks.stream().filter(q->q.getId()==id).findFirst().get();
     }
     public void saveImages(String filePath) throws IOException {
         String[] wearables = new String[]{"talisman","shoes","gloves","helm","armor","off_hand","amulet","main_hand","ring"};
         List<String> wearableSlots = new ArrayList<>(Arrays.stream(wearables).collect(Collectors.toList()));
         for(StaticFile sf : this.staticFiles){
             System.out.println(sf.getId());
-            if(sf.getId()<216050){
+            if(sf.getId()<217582){
                 break;
             }
             if(sf.generateURL()==null){

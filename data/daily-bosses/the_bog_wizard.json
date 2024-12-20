@@ -1,0 +1,271 @@
+{
+  "staticdata_ts": 1725548279,
+  "ts": 1725617456,
+  "ch_boss": {
+    "img_type": 33255,
+    "inf_dmg": 0,
+    "m_end_in": 1725687000,
+    "loots_turn": 1,
+    "img": 7339,
+    "inf_dmg_last": 0,
+    "rewards": [
+      {
+        "name": "1",
+        "tier_img": 16449,
+        "chest_img": 16449,
+        "place_min": 1,
+        "place_max": 1,
+        "rewards": {
+          "gold": 0,
+          "premium": 200,
+          "items": [
+            [
+              10073,
+              4000
+            ],
+            [
+              10098,
+              4
+            ],
+            [
+              1417,
+              5
+            ]
+          ]
+        }
+      },
+      {
+        "tier_img": 16447,
+        "chest_img": 16447,
+        "place_min": 2,
+        "place_max": 3,
+        "rewards": {
+          "gold": 0,
+          "premium": 100,
+          "items": [
+            [
+              10073,
+              2000
+            ],
+            [
+              10098,
+              2
+            ],
+            [
+              1417,
+              4
+            ]
+          ]
+        },
+        "name": "2 - 3"
+      },
+      {
+        "chest_img": 16445,
+        "place_min": 4,
+        "place_max": 10,
+        "rewards": {
+          "gold": 0,
+          "premium": 0,
+          "items": [
+            [
+              10073,
+              1000
+            ],
+            [
+              10098,
+              2
+            ],
+            [
+              1417,
+              3
+            ]
+          ]
+        },
+        "name": "4 - 10",
+        "tier_img": 16445
+      },
+      {
+        "place_min": 11,
+        "place_max": 50,
+        "rewards": {
+          "items": [
+            [
+              10073,
+              250
+            ],
+            [
+              10098,
+              1
+            ],
+            [
+              1417,
+              2
+            ]
+          ],
+          "gold": 0,
+          "premium": 0
+        },
+        "name": "11 - 50",
+        "tier_img": 16455,
+        "chest_img": 16455
+      },
+      {
+        "place_max": 100,
+        "rewards": {
+          "items": [
+            [
+              10073,
+              100
+            ],
+            [
+              10098,
+              1
+            ],
+            [
+              1417,
+              1
+            ]
+          ],
+          "gold": 0,
+          "premium": 0
+        },
+        "name": "51 - 100",
+        "tier_img": 16459,
+        "chest_img": 16459,
+        "place_min": 51
+      }
+    ],
+    "id": 2,
+    "m_start_in": 1725685200,
+    "imgbig": 2439,
+    "avatar": 7605,
+    "scale_infoscreen": 1,
+    "boss": {
+      "id": -2,
+      "name": "The Bog Wizard",
+      "sex": "male",
+      "avatar": 7605,
+      "graphic": 2439,
+      "graphic_skin": "",
+      "scale": 0.7,
+      "lvl": 1,
+      "pos": 2,
+      "back": 0,
+      "ai": "mob_boss",
+      "attack": 250000,
+      "magic": 660000,
+      "def": 70000,
+      "hp": 1000000000000,
+      "hp0": 1000000000000,
+      "shield": 350000,
+      "shield0": 350000,
+      "mel_res": 80,
+      "mag_res": 80,
+      "immunity": 0,
+      "crit": 0,
+      "crit_val": 0,
+      "dodge": 0,
+      "askills": [
+        {
+          "en_co": 0,
+          "rb": 1,
+          "uhash": 1001,
+          "desc_cond": "",
+          "id": 466,
+          "t_id": 0,
+          "as_eff": [
+            16365,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "en_val": 0,
+          "wt": 1,
+          "as_eff_v2": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "eff": "hit=enemy,single,any,1,magic,1,150,200,0.1,100,100,0.0,0,100,0.0,0,0.0",
+          "co": 0,
+          "lvl": 1,
+          "desc": "• {STRING.41895} #MAGIC# {STRING.42002}, {STRING.41896} #SKIPMAGIC#"
+        }
+      ],
+      "pskills": [
+        {
+          "trig": "heal",
+          "lvl": 1,
+          "src": "mob",
+          "id": 1002,
+          "name": "Heal Counter",
+          "exe_by": "enemy",
+          "exe_own": 0,
+          "trigp": 0,
+          "chance": 100,
+          "asset": 0,
+          "desc": "\u003ccolor=#86ff1a\u003e{STRING.41976}:\u003c/color\u003e\n• {STRING.42056} #MAGIC#, {STRING.41896} #SKIPMELEE#",
+          "eff": "hit=enemies,1,magic,1,500,500,0.0,75,75,0.0,0,100,0.0,0,0.0"
+        },
+        {
+          "chance": 100,
+          "lvl": 1,
+          "src": "mob",
+          "name": "Sensitive To Spells",
+          "desc": "\u003ccolor=#35cbfc\u003e{STRING.42068} 3:\u003c/color\u003e\r\n• {STRING.42030} -#ATTR_OTHER#",
+          "trig": "intensity_equal",
+          "trigp": 49,
+          "asset": 0,
+          "id": 1003,
+          "eff": "attribute=self,magic_resistance_pct,1,-100,-100,0.0,999,100,0.0,magic_resistance",
+          "exe_by": "enemy",
+          "exe_own": 0
+        }
+      ],
+      "atk_array": {
+        "18": 60000,
+        "27": 80000,
+        "35": 100000,
+        "44": 140000,
+        "53": 200000,
+        "62": 300000,
+        "0": 20000,
+        "9": 40000
+      },
+      "mgc_array": {
+        "44": 300000,
+        "53": 500000,
+        "62": 1000000,
+        "0": 20000,
+        "9": 60000,
+        "18": 100000,
+        "27": 140000,
+        "35": 200000
+      },
+      "shd_array": {
+        "44": 200000,
+        "53": 400000,
+        "62": 600000,
+        "0": 10000,
+        "9": 20000,
+        "18": 30000,
+        "27": 40000,
+        "35": 100000
+      },
+      "level_inc_interval": 3
+    },
+    "prev": {},
+    "inf_dmg_max": 0
+  }
+}

@@ -4,6 +4,7 @@ public class StaticClientString {
 
     private int id;
     private String en;
+    private String it;
 
     public int getId() {
         return id;
@@ -19,6 +20,14 @@ public class StaticClientString {
 
     public void setEn(String en) {
         this.en = en;
+    }
+
+    public String getIt() {
+        return it;
+    }
+
+    public void setIt(String it){
+        this.it = it;
     }
 
     @Override
