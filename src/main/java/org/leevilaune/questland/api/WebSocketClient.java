@@ -42,11 +42,13 @@ public class WebSocketClient extends WebSocketListener {
 
     private void handle(String json){
         this.returnedJson = json;
+        System.out.println(json);
         this.isReady = true;
     }
     public String sendRequest(org.leevilaune.questland.api.requests.Request r) throws JsonProcessingException {
         this.ws.send(mapper.writeValueAsString(r));
-        while(isReady==false){
+        while (!isReady) {
+            Thread.onSpinWait();
         }
         this.isReady = false;
         return returnedJson;

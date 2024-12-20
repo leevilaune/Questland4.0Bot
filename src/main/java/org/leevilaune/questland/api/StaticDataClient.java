@@ -1,6 +1,7 @@
 package org.leevilaune.questland.api;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import okhttp3.*;
 import org.jetbrains.annotations.NotNull;
@@ -8,6 +9,7 @@ import org.jetbrains.annotations.Nullable;
 import org.leevilaune.questland.Logger;
 import org.leevilaune.questland.api.requests.staticdata.StaticDataRequest;
 
+import java.time.Instant;
 import java.util.concurrent.TimeUnit;
 
 public class StaticDataClient extends WebSocketListener {
@@ -62,11 +64,18 @@ public class StaticDataClient extends WebSocketListener {
 
     @Override
     public void onMessage(@NotNull WebSocket webSocket, @NotNull String text) {
+        super.onMessage(webSocket, text);
         System.out.println(text);
         returnedJson = text;
         logger.log(text);
+        try {
+            JsonNode node = mapper.readValue(text, JsonNode.class);
+            System.out.println("Static Data TS: "+Instant.ofEpochSecond(node.get("staticdata_ts").asLong()));
+            System.out.println("Time Stamp    : "+Instant.ofEpochSecond(node.get("ts").asLong()));
+        } catch (JsonProcessingException e) {
+            throw new RuntimeException(e);
+        }
         webSocket.close(2000,null);
-        super.onMessage(webSocket, text);
     }
 
     @Override

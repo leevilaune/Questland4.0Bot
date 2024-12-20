@@ -23897,20 +23897,6 @@
   "myth" : null,
   "links" : null
 }, {
-  "id" : 38844,
-  "name" : "Battle Master +",
-  "quality" : "mythical",
-  "slot" : "orb",
-  "urls" : null,
-  "stats" : {
-    "dmg" : [ 2860, 286 ],
-    "def" : null,
-    "hp" : null,
-    "magic" : null
-  },
-  "myth" : null,
-  "links" : null
-}, {
   "id" : 38870,
   "name" : "Hidden Path",
   "quality" : "rare",
@@ -24317,174 +24303,6 @@
   "myth" : null,
   "links" : null
 }, {
-  "id" : 39104,
-  "name" : "The Final Capture",
-  "quality" : "legendary",
-  "slot" : "orb",
-  "urls" : null,
-  "stats" : {
-    "dmg" : null,
-    "def" : null,
-    "hp" : [ 828, 224 ],
-    "magic" : null
-  },
-  "myth" : null,
-  "links" : null
-}, {
-  "id" : 39105,
-  "name" : "Night Remoulding",
-  "quality" : "legendary",
-  "slot" : "orb",
-  "urls" : null,
-  "stats" : {
-    "dmg" : null,
-    "def" : null,
-    "hp" : [ 828, 224 ],
-    "magic" : null
-  },
-  "myth" : null,
-  "links" : null
-}, {
-  "id" : 39106,
-  "name" : "The Mothman",
-  "quality" : "legendary",
-  "slot" : "orb",
-  "urls" : null,
-  "stats" : {
-    "dmg" : [ 828, 224 ],
-    "def" : null,
-    "hp" : null,
-    "magic" : null
-  },
-  "myth" : null,
-  "links" : null
-}, {
-  "id" : 39107,
-  "name" : "Luminous Gaze",
-  "quality" : "legendary",
-  "slot" : "orb",
-  "urls" : null,
-  "stats" : {
-    "dmg" : [ 828, 224 ],
-    "def" : null,
-    "hp" : null,
-    "magic" : null
-  },
-  "myth" : null,
-  "links" : null
-}, {
-  "id" : 39108,
-  "name" : "Hope in a Bottle",
-  "quality" : "legendary",
-  "slot" : "orb",
-  "urls" : null,
-  "stats" : {
-    "dmg" : null,
-    "def" : [ 828, 224 ],
-    "hp" : null,
-    "magic" : null
-  },
-  "myth" : null,
-  "links" : null
-}, {
-  "id" : 39109,
-  "name" : "Gossamer Wing",
-  "quality" : "legendary",
-  "slot" : "orb",
-  "urls" : null,
-  "stats" : {
-    "dmg" : null,
-    "def" : [ 828, 224 ],
-    "hp" : null,
-    "magic" : null
-  },
-  "myth" : null,
-  "links" : null
-}, {
-  "id" : 39110,
-  "name" : "The Final Capture",
-  "quality" : "artifact1",
-  "slot" : "orb",
-  "urls" : null,
-  "stats" : {
-    "dmg" : null,
-    "def" : null,
-    "hp" : [ 3020, 302 ],
-    "magic" : null
-  },
-  "myth" : null,
-  "links" : null
-}, {
-  "id" : 39111,
-  "name" : "Night Remoulding",
-  "quality" : "artifact1",
-  "slot" : "orb",
-  "urls" : null,
-  "stats" : {
-    "dmg" : null,
-    "def" : null,
-    "hp" : [ 3020, 302 ],
-    "magic" : null
-  },
-  "myth" : null,
-  "links" : null
-}, {
-  "id" : 39112,
-  "name" : "The Mothman",
-  "quality" : "artifact1",
-  "slot" : "orb",
-  "urls" : null,
-  "stats" : {
-    "dmg" : [ 3020, 302 ],
-    "def" : null,
-    "hp" : null,
-    "magic" : null
-  },
-  "myth" : null,
-  "links" : null
-}, {
-  "id" : 39113,
-  "name" : "Luminous Gaze",
-  "quality" : "artifact1",
-  "slot" : "orb",
-  "urls" : null,
-  "stats" : {
-    "dmg" : [ 3020, 302 ],
-    "def" : null,
-    "hp" : null,
-    "magic" : null
-  },
-  "myth" : null,
-  "links" : null
-}, {
-  "id" : 39114,
-  "name" : "Hope in a Bottle",
-  "quality" : "artifact1",
-  "slot" : "orb",
-  "urls" : null,
-  "stats" : {
-    "dmg" : null,
-    "def" : [ 3020, 302 ],
-    "hp" : null,
-    "magic" : null
-  },
-  "myth" : null,
-  "links" : null
-}, {
-  "id" : 39115,
-  "name" : "Gossamer Wing",
-  "quality" : "artifact1",
-  "slot" : "orb",
-  "urls" : null,
-  "stats" : {
-    "dmg" : null,
-    "def" : [ 3020, 302 ],
-    "hp" : null,
-    "magic" : null
-  },
-  "myth" : null,
-  "links" : null
-}, {
   "id" : 39132,
   "name" : "One on One",
   "quality" : "mythical",
@@ -24704,20 +24522,6 @@
     "dmg" : null,
     "def" : null,
     "hp" : [ 2860, 286 ],
-    "magic" : null
-  },
-  "myth" : null,
-  "links" : null
-}, {
-  "id" : 39226,
-  "name" : "Glyph of Taint",
-  "quality" : "mythical",
-  "slot" : "orb",
-  "urls" : null,
-  "stats" : {
-    "dmg" : null,
-    "def" : [ 2860, 286 ],
-    "hp" : null,
     "magic" : null
   },
   "myth" : null,
@@ -24947,174 +24751,6 @@
   "myth" : null,
   "links" : null
 }, {
-  "id" : 39451,
-  "name" : "Foliar Wreath",
-  "quality" : "legendary",
-  "slot" : "orb",
-  "urls" : null,
-  "stats" : {
-    "dmg" : null,
-    "def" : null,
-    "hp" : [ 848, 229 ],
-    "magic" : null
-  },
-  "myth" : null,
-  "links" : null
-}, {
-  "id" : 39452,
-  "name" : "Graceful Dawn",
-  "quality" : "legendary",
-  "slot" : "orb",
-  "urls" : null,
-  "stats" : {
-    "dmg" : null,
-    "def" : null,
-    "hp" : [ 848, 229 ],
-    "magic" : null
-  },
-  "myth" : null,
-  "links" : null
-}, {
-  "id" : 39453,
-  "name" : "Thorny Heart",
-  "quality" : "legendary",
-  "slot" : "orb",
-  "urls" : null,
-  "stats" : {
-    "dmg" : [ 848, 229 ],
-    "def" : null,
-    "hp" : null,
-    "magic" : null
-  },
-  "myth" : null,
-  "links" : null
-}, {
-  "id" : 39454,
-  "name" : "Power of Creation",
-  "quality" : "legendary",
-  "slot" : "orb",
-  "urls" : null,
-  "stats" : {
-    "dmg" : [ 848, 229 ],
-    "def" : null,
-    "hp" : null,
-    "magic" : null
-  },
-  "myth" : null,
-  "links" : null
-}, {
-  "id" : 39455,
-  "name" : "Floral Infusion",
-  "quality" : "legendary",
-  "slot" : "orb",
-  "urls" : null,
-  "stats" : {
-    "dmg" : null,
-    "def" : [ 848, 229 ],
-    "hp" : null,
-    "magic" : null
-  },
-  "myth" : null,
-  "links" : null
-}, {
-  "id" : 39456,
-  "name" : "Pond of Purification",
-  "quality" : "legendary",
-  "slot" : "orb",
-  "urls" : null,
-  "stats" : {
-    "dmg" : null,
-    "def" : [ 848, 229 ],
-    "hp" : null,
-    "magic" : null
-  },
-  "myth" : null,
-  "links" : null
-}, {
-  "id" : 39457,
-  "name" : "Foliar Wreath",
-  "quality" : "artifact1",
-  "slot" : "orb",
-  "urls" : null,
-  "stats" : {
-    "dmg" : null,
-    "def" : null,
-    "hp" : [ 3070, 307 ],
-    "magic" : null
-  },
-  "myth" : null,
-  "links" : null
-}, {
-  "id" : 39458,
-  "name" : "Graceful Dawn",
-  "quality" : "artifact1",
-  "slot" : "orb",
-  "urls" : null,
-  "stats" : {
-    "dmg" : null,
-    "def" : null,
-    "hp" : [ 3070, 307 ],
-    "magic" : null
-  },
-  "myth" : null,
-  "links" : null
-}, {
-  "id" : 39459,
-  "name" : "Thorny Heart",
-  "quality" : "artifact1",
-  "slot" : "orb",
-  "urls" : null,
-  "stats" : {
-    "dmg" : [ 3070, 307 ],
-    "def" : null,
-    "hp" : null,
-    "magic" : null
-  },
-  "myth" : null,
-  "links" : null
-}, {
-  "id" : 39460,
-  "name" : "Power of Creation",
-  "quality" : "artifact1",
-  "slot" : "orb",
-  "urls" : null,
-  "stats" : {
-    "dmg" : [ 3070, 307 ],
-    "def" : null,
-    "hp" : null,
-    "magic" : null
-  },
-  "myth" : null,
-  "links" : null
-}, {
-  "id" : 39461,
-  "name" : "Floral Infusion",
-  "quality" : "artifact1",
-  "slot" : "orb",
-  "urls" : null,
-  "stats" : {
-    "dmg" : null,
-    "def" : [ 3070, 307 ],
-    "hp" : null,
-    "magic" : null
-  },
-  "myth" : null,
-  "links" : null
-}, {
-  "id" : 39462,
-  "name" : "Pond of Purification",
-  "quality" : "artifact1",
-  "slot" : "orb",
-  "urls" : null,
-  "stats" : {
-    "dmg" : null,
-    "def" : [ 3070, 307 ],
-    "hp" : null,
-    "magic" : null
-  },
-  "myth" : null,
-  "links" : null
-}, {
   "id" : 39479,
   "name" : "Ice-Bound Spark",
   "quality" : "rare",
@@ -25334,6 +24970,1812 @@
     "dmg" : null,
     "def" : null,
     "hp" : [ 2860, 286 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39530,
+  "name" : "Gaze of Ruin",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 2860, 286 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39226,
+  "name" : "Glyph of Taint",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 2860, 286 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39542,
+  "name" : "Puff of the Past",
+  "quality" : "rare",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 60, 20 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39543,
+  "name" : "Wind of the Past",
+  "quality" : "epic",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 81, 27 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39544,
+  "name" : "Breath of the Past",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 140, 45 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39104,
+  "name" : "The Final Capture",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 828, 224 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39105,
+  "name" : "Night Remoulding",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 828, 224 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39106,
+  "name" : "The Mothman",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 828, 224 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39107,
+  "name" : "Luminous Gaze",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 828, 224 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39108,
+  "name" : "Hope in a Bottle",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 828, 224 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39109,
+  "name" : "Gossamer Wing",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 828, 224 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39110,
+  "name" : "The Final Capture",
+  "quality" : "artifact1",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 3020, 302 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39111,
+  "name" : "Night Remoulding",
+  "quality" : "artifact1",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 3020, 302 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39112,
+  "name" : "The Mothman",
+  "quality" : "artifact1",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 3020, 302 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39113,
+  "name" : "Luminous Gaze",
+  "quality" : "artifact1",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 3020, 302 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39114,
+  "name" : "Hope in a Bottle",
+  "quality" : "artifact1",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 3020, 302 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39115,
+  "name" : "Gossamer Wing",
+  "quality" : "artifact1",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 3020, 302 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39572,
+  "name" : "The Mothman",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 2860, 286 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39573,
+  "name" : "Luminous Gaze",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 2860, 286 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39574,
+  "name" : "The Final Capture",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 2860, 286 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39575,
+  "name" : "Night Remoulding",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 2860, 286 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39576,
+  "name" : "Hope in a Bottle",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 2860, 286 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39577,
+  "name" : "Gossamer Wing",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 2860, 286 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39583,
+  "name" : "Driad's Charm",
+  "quality" : "rare",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 51, 17 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39584,
+  "name" : "Driad's Grace",
+  "quality" : "epic",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 72, 24 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39585,
+  "name" : "Driad's Allure",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 133, 43 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39614,
+  "name" : "Ember Seed",
+  "quality" : "rare",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 45, 15 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39615,
+  "name" : "Flameheart Seed",
+  "quality" : "epic",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 72, 24 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39616,
+  "name" : "Inferno Seed",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 133, 43 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39742,
+  "name" : "Pursuer's Advice",
+  "quality" : "rare",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 60, 20 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39743,
+  "name" : "Pursuer's Guidance",
+  "quality" : "epic",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 81, 27 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39744,
+  "name" : "Pursuer's Providence",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 140, 45 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39845,
+  "name" : "Chaotic Grasp",
+  "quality" : "rare",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 51, 17 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39846,
+  "name" : "Chaotic Insight",
+  "quality" : "epic",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 72, 24 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39847,
+  "name" : "Chaotic Perception",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 133, 43 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39451,
+  "name" : "Foliar Wreath",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 848, 229 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39452,
+  "name" : "Graceful Dawn",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 848, 229 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39453,
+  "name" : "Thorny Heart",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 848, 229 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39454,
+  "name" : "Power of Creation",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 848, 229 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39455,
+  "name" : "Floral Infusion",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 848, 229 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39456,
+  "name" : "Pond of Purification",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 848, 229 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39457,
+  "name" : "Foliar Wreath",
+  "quality" : "artifact1",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 3070, 307 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39458,
+  "name" : "Graceful Dawn",
+  "quality" : "artifact1",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 3070, 307 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39459,
+  "name" : "Thorny Heart",
+  "quality" : "artifact1",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 3070, 307 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39460,
+  "name" : "Power of Creation",
+  "quality" : "artifact1",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 3070, 307 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39461,
+  "name" : "Floral Infusion",
+  "quality" : "artifact1",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 3070, 307 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39462,
+  "name" : "Pond of Purification",
+  "quality" : "artifact1",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 3070, 307 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39859,
+  "name" : "Foliar Wreath",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 2860, 286 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39860,
+  "name" : "Graceful Dawn",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 2860, 286 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39861,
+  "name" : "Thorny Heart",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 2860, 286 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39862,
+  "name" : "Power of Creation",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 2860, 286 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39863,
+  "name" : "Floral Infusion",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 2860, 286 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39864,
+  "name" : "Pond of Purification",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 2860, 286 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39865,
+  "name" : "Witch's Familiar",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 2860, 286 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39866,
+  "name" : "Witch's Familiar +",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 2860, 286 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39883,
+  "name" : "Spark of Torment",
+  "quality" : "rare",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 45, 15 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39884,
+  "name" : "Flame of Torment",
+  "quality" : "epic",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 72, 24 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39885,
+  "name" : "Blaze of Torment",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 133, 43 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39994,
+  "name" : "Scarlet Chains",
+  "quality" : "rare",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 60, 20 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39995,
+  "name" : "Ruby Chains",
+  "quality" : "epic",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 81, 27 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39996,
+  "name" : "Crimson Chains",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 140, 45 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40009,
+  "name" : "Golden Orchard",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 2860, 286 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40010,
+  "name" : "Golden Orchard +",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 2860, 286 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40011,
+  "name" : "Golden Orchard +++",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 2860, 286 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40012,
+  "name" : "Sound of Turmoil",
+  "quality" : "rare",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 51, 17 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40013,
+  "name" : "Sound of Havoc",
+  "quality" : "epic",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 72, 24 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40014,
+  "name" : "Sound of Mayhem",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 133, 43 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40043,
+  "name" : "The Haunted Realm",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 2860, 286 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40044,
+  "name" : "The Haunted Realm +",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 2860, 286 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40045,
+  "name" : "The Haunted Realm +++",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 2860, 286 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40047,
+  "name" : "Genesis Matter",
+  "quality" : "rare",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 45, 15 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40048,
+  "name" : "Genesis Substance",
+  "quality" : "epic",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 72, 24 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40049,
+  "name" : "Genesis Heart",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 133, 43 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39730,
+  "name" : "Sigil of Bloodshed",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 896, 241 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39731,
+  "name" : "Death's Bride",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 896, 241 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39732,
+  "name" : "Vanquished Terror",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 896, 241 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39733,
+  "name" : "The Executioner",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 896, 241 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39734,
+  "name" : "Hollow Hill",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 896, 241 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39735,
+  "name" : "Alley of Bones",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 896, 241 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39736,
+  "name" : "Sigil of Bloodshed",
+  "quality" : "artifact1",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 3190, 319 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39737,
+  "name" : "Death's Bride",
+  "quality" : "artifact1",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 3190, 319 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39738,
+  "name" : "Vanquished Terror",
+  "quality" : "artifact1",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 3190, 319 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39739,
+  "name" : "The Executioner",
+  "quality" : "artifact1",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 3190, 319 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39740,
+  "name" : "Hollow Hill",
+  "quality" : "artifact1",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 3190, 319 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 39741,
+  "name" : "Alley of Bones",
+  "quality" : "artifact1",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 3190, 319 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40075,
+  "name" : "Hollow Hill",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 2860, 286 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40076,
+  "name" : "Alley of Bones",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 2860, 286 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40077,
+  "name" : "Time-worn Sigil",
+  "quality" : "rare",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 60, 20 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40078,
+  "name" : "Foregone Sigil",
+  "quality" : "epic",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 81, 27 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40079,
+  "name" : "Ancient Sigil",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 140, 45 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40177,
+  "name" : "Emblem of Bloodthirst",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 916, 245 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40178,
+  "name" : "The Count's Crown",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 916, 245 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40179,
+  "name" : "Night Bite",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 916, 245 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40180,
+  "name" : "Reminiscence",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 916, 245 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40181,
+  "name" : "Forgotten Halls",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 916, 245 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40182,
+  "name" : "Veil of Mystery",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 916, 245 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40183,
+  "name" : "Emblem of Bloodthirst",
+  "quality" : "artifact1",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 3240, 324 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40184,
+  "name" : "The Count's Crown",
+  "quality" : "artifact1",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 3240, 324 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40185,
+  "name" : "Night Bite",
+  "quality" : "artifact1",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 3240, 324 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40186,
+  "name" : "Reminiscence",
+  "quality" : "artifact1",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 3240, 324 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40187,
+  "name" : "Forgotten Halls",
+  "quality" : "artifact1",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 3240, 324 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40188,
+  "name" : "Veil of Mystery",
+  "quality" : "artifact1",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 3240, 324 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40193,
+  "name" : "Bottled Malice",
+  "quality" : "rare",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 51, 17 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40194,
+  "name" : "Bottled Spite",
+  "quality" : "epic",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 72, 24 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40195,
+  "name" : "Bottled Vengeance",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 133, 43 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40208,
+  "name" : "Wings of Joy",
+  "quality" : "rare",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 45, 15 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40209,
+  "name" : "Wings of Redemption",
+  "quality" : "epic",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 72, 24 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40210,
+  "name" : "Wings of Freedom",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 133, 43 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40071,
+  "name" : "Sigil of Bloodshed",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 2870, 287 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40072,
+  "name" : "Death's Bride",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 2870, 287 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40073,
+  "name" : "Vanquished Terror",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 2870, 287 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40074,
+  "name" : "The Executioner",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 2870, 287 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 38844,
+  "name" : "Battle Master +",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 2860, 286 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40232,
+  "name" : "Battle Master +",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 2860, 286 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40233,
+  "name" : "Bolt of Rage",
+  "quality" : "rare",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 60, 20 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40234,
+  "name" : "Bolt of Fury",
+  "quality" : "epic",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 81, 27 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40235,
+  "name" : "Bolt of Mayhem",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 140, 45 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40257,
+  "name" : "Seasonal Goods",
+  "quality" : "artifact1",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 3300, 330 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40258,
+  "name" : "King of the Feast",
+  "quality" : "artifact1",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 3300, 330 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40259,
+  "name" : "Falling Leaves",
+  "quality" : "artifact1",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 3300, 330 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40260,
+  "name" : "Seasonal Goods",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : null,
+    "hp" : [ 2860, 286 ],
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40261,
+  "name" : "King of the Feast",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 2860, 286 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40262,
+  "name" : "Falling Leaves",
+  "quality" : "mythical",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 2860, 286 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40294,
+  "name" : "Lake Charm",
+  "quality" : "rare",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 51, 17 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40295,
+  "name" : "Sea Charm",
+  "quality" : "epic",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 72, 24 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40296,
+  "name" : "Ocean Charm",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : null,
+    "def" : [ 133, 43 ],
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40323,
+  "name" : "Dark Enticement",
+  "quality" : "rare",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 45, 15 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40324,
+  "name" : "Dark Allurement",
+  "quality" : "epic",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 72, 24 ],
+    "def" : null,
+    "hp" : null,
+    "magic" : null
+  },
+  "myth" : null,
+  "links" : null
+}, {
+  "id" : 40325,
+  "name" : "Dark Temptation",
+  "quality" : "legendary",
+  "slot" : "orb",
+  "urls" : null,
+  "stats" : {
+    "dmg" : [ 133, 43 ],
+    "def" : null,
+    "hp" : null,
     "magic" : null
   },
   "myth" : null,

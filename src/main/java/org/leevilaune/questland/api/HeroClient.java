@@ -30,16 +30,17 @@ public class HeroClient {
         this.mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
     }
 
-    public Player getPlayer(int id) throws JsonProcessingException {
+    public Player getPlayer(String id) throws JsonProcessingException {
         String node = this.webSocketClient.sendRequest(new GetProfileRequest(0,token,version,id));
-        this.id = id;
-        return mapper.readerFor(Player.class).readValue(deserialization.reformat(id,"player_info",node));
+        int currentId = Integer.parseInt(id);
+        deserialization.deserializeOrbs(node,currentId);
+        return mapper.readerFor(Player.class).readValue(deserialization.reformat(currentId,"player_info",node));
     }
     public List<Player> getMultiple(List<Integer> ids) throws Exception {
         List<Player> players = new ArrayList<>();
         int i = 0;
         for (int id : ids) {
-            players.add(getPlayer(id));
+            players.add(getPlayer(String.valueOf(id)));
             Thread.sleep(100);
             i++;
             if (i > 100) {

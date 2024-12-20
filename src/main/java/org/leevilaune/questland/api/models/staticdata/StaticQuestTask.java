@@ -7,6 +7,7 @@ public class StaticQuestTask {
     private int id;
     private List<Integer> task;
     private int item;
+    private int limit;
 
     public int getId() {
         return id;
@@ -32,12 +33,29 @@ public class StaticQuestTask {
         this.item = item;
     }
 
-    public String getTaskString(List<StaticClientString> clientStrings){
-        String taskString = "";
+    public int getLimit() {
+        return limit;
+    }
+
+    public void setLimit(int limit) {
+        this.limit = limit;
+    }
+
+    public String getTaskString(List<StaticClientString> clientStrings, String lang){
+        StringBuilder taskString = new StringBuilder();
         for(int i : this.getTask()){
-            taskString+=" "+clientStrings.stream().filter(c->c.getId()==i).findFirst().get().getEn();
+            if(lang.equalsIgnoreCase("en")){
+                taskString.append(" ").append(clientStrings.stream().filter(c -> c.getId() == i).findFirst().get().getEn());
+            }
+            if(lang.equalsIgnoreCase("it")){
+                if(!clientStrings.stream().filter(c->c.getId()==i).findFirst().get().getIt().isEmpty()){
+                    taskString.append(" ").append(clientStrings.stream().filter(c -> c.getId() == i).findFirst().get().getIt());
+                }else{
+                    taskString.append(" ").append(clientStrings.stream().filter(c -> c.getId() == i).findFirst().get().getEn());
+                }
+            }
         }
-        return taskString;
+        return taskString.toString();
     }
 
     @Override

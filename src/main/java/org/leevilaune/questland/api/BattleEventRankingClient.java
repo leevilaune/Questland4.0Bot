@@ -33,7 +33,7 @@ public class BattleEventRankingClient extends WebSocketListener {
         Thread.sleep(2000);
         System.out.println(returnedJson);
         long t = Instant.now().getEpochSecond();
-        while(this.isReady==false){
+        while(!this.isReady){
             t+=1;
         }
         System.out.println(t-Instant.now().getEpochSecond());
@@ -53,7 +53,7 @@ public class BattleEventRankingClient extends WebSocketListener {
                         + p.getPinfo().getPlayerInfo().getP().getId();
                 ranks.add(s);
                 System.out.println(s);
-            }catch (Exception e){
+            }catch (Exception ignored){
 
             }
 

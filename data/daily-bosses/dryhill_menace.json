@@ -1,0 +1,271 @@
+{
+  "ch_boss": {
+    "boss": {
+      "id": -4,
+      "name": "Dryhill Menace",
+      "sex": "male",
+      "avatar": 7781,
+      "graphic": 3952,
+      "graphic_skin": "",
+      "scale": 0.7,
+      "lvl": 1,
+      "pos": 2,
+      "back": 0,
+      "ai": "mob_boss",
+      "attack": 100000,
+      "magic": 10000,
+      "def": 50000,
+      "hp": 1000000000000,
+      "hp0": 1000000000000,
+      "shield": 250000,
+      "shield0": 250000,
+      "mel_res": 50,
+      "mag_res": 50,
+      "immunity": 0,
+      "crit": 0,
+      "crit_val": 0,
+      "dodge": 0,
+      "askills": [
+        {
+          "rb": 1,
+          "uhash": 1001,
+          "eff": "hit=enemy,single,any,1,attack,1,100,100,0.0,20,20,0.0,0,100,0.0,0,0.0;ball=enemy,single,any,delete,random,1,1,100,0.0",
+          "as_eff_v2": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "en_co": 0,
+          "en_val": 0,
+          "lvl": 1,
+          "id": 225,
+          "as_eff": [
+            16353,
+            16733,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "desc": "Melee attack #MELEE# on a single enemy.\r\nignore opponent's shield #SKIPMELEE#\r\ndelete enemy random spirit",
+          "desc_cond": "",
+          "t_id": 0,
+          "co": 0,
+          "wt": 1
+        }
+      ],
+      "pskills": [
+        {
+          "desc": "\u003ccolor=#ff5400\u003e{STRING.42069} 3:\u003c/color\u003e\r\n• {STRING.42027} -#ATTR_OTHER#",
+          "eff": "attribute=self,melee_resistance_pct,1,-100,-100,0.0,999,100,0.0,melee_resistance",
+          "exe_by": "enemy",
+          "chance": 100,
+          "lvl": 1,
+          "src": "mob",
+          "id": 1002,
+          "exe_own": 0,
+          "trig": "intensity_equal",
+          "trigp": 52,
+          "asset": 0,
+          "name": "Sensitive Fellow"
+        },
+        {
+          "name": "Sensitive To Spells",
+          "exe_own": 0,
+          "trigp": 49,
+          "chance": 100,
+          "asset": 0,
+          "src": "mob",
+          "id": 1003,
+          "desc": "\u003ccolor=#35cbfc\u003e{STRING.42068} 3:\u003c/color\u003e\r\n• {STRING.42030} -#ATTR_OTHER#",
+          "eff": "attribute=self,magic_resistance_pct,1,-100,-100,0.0,999,100,0.0,magic_resistance",
+          "exe_by": "enemy",
+          "trig": "intensity_equal",
+          "lvl": 1
+        }
+      ],
+      "atk_array": {
+        "25": 140000,
+        "30": 200000,
+        "35": 300000,
+        "0": 20000,
+        "5": 40000,
+        "10": 60000,
+        "15": 80000,
+        "20": 100000
+      },
+      "mgc_array": {
+        "5": 40000,
+        "10": 60000,
+        "15": 80000,
+        "20": 100000,
+        "25": 140000,
+        "30": 200000,
+        "35": 300000,
+        "0": 20000
+      },
+      "shd_array": {
+        "25": 200000,
+        "30": 400000,
+        "35": 600000,
+        "0": 10000,
+        "5": 20000,
+        "10": 30000,
+        "15": 40000,
+        "20": 100000
+      },
+      "level_inc_interval": 3
+    },
+    "m_end_in": 1725773400,
+    "loots_turn": 1,
+    "img_type": 33251,
+    "inf_dmg": 0,
+    "m_start_in": 1725771600,
+    "imgbig": 3952,
+    "avatar": 7781,
+    "inf_dmg_last": 0,
+    "scale_infoscreen": 1,
+    "rewards": [
+      {
+        "place_max": 1,
+        "rewards": {
+          "gold": 0,
+          "premium": 200,
+          "items": [
+            [
+              10071,
+              4000
+            ],
+            [
+              10098,
+              4
+            ],
+            [
+              1417,
+              5
+            ]
+          ]
+        },
+        "name": "1",
+        "tier_img": 16449,
+        "chest_img": 16449,
+        "place_min": 1
+      },
+      {
+        "chest_img": 16447,
+        "place_min": 2,
+        "place_max": 3,
+        "rewards": {
+          "gold": 0,
+          "premium": 100,
+          "items": [
+            [
+              10071,
+              2000
+            ],
+            [
+              10098,
+              2
+            ],
+            [
+              1417,
+              4
+            ]
+          ]
+        },
+        "name": "2 - 3",
+        "tier_img": 16447
+      },
+      {
+        "chest_img": 16445,
+        "place_min": 4,
+        "place_max": 10,
+        "rewards": {
+          "gold": 0,
+          "premium": 0,
+          "items": [
+            [
+              10071,
+              1000
+            ],
+            [
+              10098,
+              2
+            ],
+            [
+              1417,
+              3
+            ]
+          ]
+        },
+        "name": "4 - 10",
+        "tier_img": 16445
+      },
+      {
+        "rewards": {
+          "gold": 0,
+          "premium": 0,
+          "items": [
+            [
+              10071,
+              250
+            ],
+            [
+              10098,
+              1
+            ],
+            [
+              1417,
+              2
+            ]
+          ]
+        },
+        "name": "11 - 50",
+        "tier_img": 16455,
+        "chest_img": 16455,
+        "place_min": 11,
+        "place_max": 50
+      },
+      {
+        "chest_img": 16459,
+        "place_min": 51,
+        "place_max": 100,
+        "rewards": {
+          "items": [
+            [
+              10071,
+              100
+            ],
+            [
+              10098,
+              1
+            ],
+            [
+              1417,
+              1
+            ]
+          ],
+          "gold": 0,
+          "premium": 0
+        },
+        "name": "51 - 100",
+        "tier_img": 16459
+      }
+    ],
+    "id": 4,
+    "inf_dmg_max": 0,
+    "prev": {},
+    "img": 7515
+  },
+  "staticdata_ts": 1725621721,
+  "ts": 1725702297
+}

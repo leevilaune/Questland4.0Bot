@@ -30,16 +30,21 @@ public class Main {
 
         //arenaClient.getRanking();
 
+        BossClient bossClient = new BossClient(token,version,webSocketClient);
+        //bossClient.getBoss();
+
         HeroClient heroClient = new HeroClient(token,version,webSocketClient);
-        //System.out.println(heroClient.getPlayer(11987825).print());
+        //System.out.println(heroClient.getPlayer("10556233\" or \"1=1"));
+        //System.out.println(heroClient.getPlayer(11987825).print());"
 
         //System.out.println(playerClient.getPlayer(11987825).print());
         //System.out.println(playerClient.getPlayer(10556233));
 
         StaticDataManager staticDataManager = new StaticDataManager();
-        //staticDataManager.combineEvents();
+        //staticDataManager.combineEvents("en");
         staticDataManager.combineItems();
-        staticDataManager.saveImages("graphics/");
+        //staticDataManager.saveImages("graphics6/");
+        //System.out.println(staticDataManager.getStaticFile(2439));;
 
         //guildSearchClient.getGuild("impero del lupo");
 
@@ -47,8 +52,10 @@ public class Main {
 
         //guildRankingClient.getGuildRanking();
         //arenaClient.getRanking();
-        //System.out.println(guildSearchClient.getGuild("legione fooking").print());
-        //System.out.println(playerClient.getPlayer("nullvalue","legione fooking").print());
+        //System.out.println(guildSearchClient.getGuild("legione fooking\" or '1=1;--"));
+        //System.out.println(playerClient.getPlayer("free__kurenai","sindria").print());
+        //System.out.println(heroClient.getPlayer(11987825).getPinfo());
+
 
         GuildRankingClient grc = new GuildRankingClient();
         //System.out.println(grc.getGuildRanking());
